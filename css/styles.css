@@ -1,0 +1,156 @@
+rule {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+}
+
+
+/* VARIABLES */
+
+:root {
+    /*FONTS*/
+    --name-font: 'Fredericka the Great';
+    --main-font: 'Montserrat';
+
+    /*COLORS*/
+    --main-yellow: #FAED26;
+    --light-gray: #9D8D8F;
+    --light-brown: #9B786F;
+    --strong-gray: #5A5560;
+    --blue-gray: #46344E; 
+}
+
+/* BASE STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    min-width: 320px;
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+    background-color: var(--blue-gray);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER STYLES */
+
+header {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+}
+
+#header--logo-nav-bar {
+    /* DISPLAY AND POSITION */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--light-gray);
+    
+}
+
+#header--nav-bar {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+
+    /* DIMENSIONS */
+    margin-left: 25px;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+#header--web-banner {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    align-items: center;
+
+    /* DIMENSIONS */
+    margin: 50px 0px;
+    
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--blue-gray);
+}
+
+#web-banner--text {
+    /* DISPLAY AND POSITION */
+    position: relative;
+    z-index: 2;
+
+    /* DIMENSIONS */
+    margin: 20px 0 0 20px;
+
+    /* COLORS AND OTHER STYLES */
+    font-weight: bold;
+    font-family: var(--main-font);
+
+}
+
+#web-banner--text :last-child {
+    margin-left: 20px;
+}
+
+#web-banner--image {
+    /* DISPLAY AND POSITION */
+    position: absolute;
+    right: 0%;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+    opacity: 0.3;
+    filter: grayscale(100%);
+    fill: contrast(200%);
+
+}
+
+#web-banner--name {
+        /* DISPLAY AND POSITION */
+
+        /* DIMENSIONS */
+        margin: 0px 0px 3px 20px;
+        font-size: 4rem;
+    
+        /* COLORS AND OTHER STYLES */
+        font-weight:initial;
+        color: var(--main-yellow);
+        font-family: var(--name-font);
+}
+
+#testbox {
+    background-color: var(--blue-gray);
+}
