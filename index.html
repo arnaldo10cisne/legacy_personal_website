@@ -16,25 +16,55 @@
 <body>
     <!-- LOGO AND NAVIGATION BAR -->
     <div id="header--logo-nav-bar">
-        <img src="./resources/placeholder/logo-placeholder2.png" alt="">
+        <img id="logo" src="./resources/placeholder/logo-placeholder2.png" alt="" height="80px">
         <nav>
+            
+            <!-- <ul id="header--nav-bar">
+                <li id="header--nav-bar--menu-button">
+                    <div>
+                        <button id="menu-button">MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="50">
+                    </div>
+                    <li class="header--nav-bar--item">
+                        <a href="">HOME</a>
+                    </li>
+                    <li class="header--nav-bar--item">
+                        <a href="">JOURNAL</a>
+                    </li>
+                    <li class="header--nav-bar--item">
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li class="header--nav-bar--item">
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li class="header--nav-bar--item">
+                        <a href="">CONTACT</a>
+                    </li>
+                </li>
+            </ul> -->
+
             <ul id="header--nav-bar">
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Journal</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
+                <li id="nav-bar--menu-button">
+                    <div>
+                        <button id="menu-button" type="button" onclick="clickMenuButton()">MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow">
+                    </div>
+                    <li class="menu--item">
+                        <a href="">HOME</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="">JOURNAL</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="">CONTACT</a>
+                    </li>
                 </li>
             </ul>
+
         </nav>
     </div>
 
@@ -44,7 +74,7 @@
         <!-- WEB BANNER -->
         <div id="header--web-banner">
             <div id="web-banner--text">
-                <p>Hi!. My name is</p>
+                <p>Hello! My name is</p>
                 <p id='web-banner--name'>Arnaldo<br>Cisneros</p>
                 <p>and i'm a web developer<br>located in Medellín, Colombia.</p>
             </div>
