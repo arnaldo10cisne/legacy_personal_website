@@ -20,7 +20,7 @@ rule {
     --light-gray: #9D8D8F;
     --light-brown: #9B786F;
     --strong-gray: #5A5560;
-    --blue-gray: #46344E; 
+    --blue-gray: #212136; 
 }
 
 /* BASE STYLES */
@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
+    min-width: 320px;
 
     background-color: var(--blue-gray);
     color: white;
@@ -80,7 +81,7 @@ header {
     /* DIMENSIONS */
 
     /* COLORS AND OTHER STYLES */
-    background-color: var(--light-gray);
+    background-color: var(--blue-gray);
     
 }
  
@@ -89,7 +90,7 @@ header {
     align-self: center;
 
     /* DIMENSIONS */
-    margin: 10px 50px 10px 10px;
+    margin: 10px 30px 10px 30px;
 }
 
 #nav-bar--menu-button div {
@@ -98,7 +99,7 @@ header {
 
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
-    border-left: var(--main-yellow) solid 1px;
+    border-left: var(--main-yellow) solid 5px;
     transition-property: font-weight;
     transition-duration: 0.2s;
 }
@@ -119,9 +120,9 @@ header {
     color: white;
 }
 
-#menu-button:hover {
+#menu-arrow {
     /* COLORS AND OTHER STYLES */
-    font-weight: bold;
+    filter: invert(1);
 }
 
 .menu--item {
@@ -145,9 +146,8 @@ header {
 
 #menu--current-page {
     /* COLORS AND OTHER STYLES */
-    color: yellowgreen;
-    background-color: var(--main-yellow);
     font-weight: bolder;
+    border-left: var(--main-yellow) solid 20px;
     
 }
 
@@ -188,6 +188,7 @@ header {
 
     /* DIMENSIONS */
     width: 100%;
+    min-width: 320px;
 
     /* COLORS AND OTHER STYLES */
     opacity: 0.3;
@@ -212,6 +213,7 @@ header {
 #header--slogan {
     /* DISPLAY AND POSITION */
     align-self: center;
+    text-align: justify;
 
     /* DIMENSIONS */
     width: 80%;
@@ -249,4 +251,6 @@ main h2 {
 
 footer {
     display: flex;
+    height: 100px;
+    background-color: var(--strong-gray);
 }
