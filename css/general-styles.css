@@ -1,0 +1,50 @@
+/* VARIABLES */
+
+:root {
+    /*FONTS*/
+    --name-font: 'Fredericka the Great';
+    --main-font: 'Montserrat';
+    --content-font: 'Roboto';
+
+    /*COLORS*/
+    --main-yellow: #ead017;
+    --light-gray: #9D8D8F;
+    --light-brown: #9B786F;
+    --strong-gray: #5A5560;
+    --blue-gray: #212136; 
+}
+
+/* BASE STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    min-width: 320px;
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    min-width: 320px;
+    min-height: 100vh;
+
+    background-color: var(--blue-gray);
+    color: white;
+    font-family: 'Roboto';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

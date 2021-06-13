@@ -1,0 +1,86 @@
+/* LOGO AND NAVIGATION BAR STYLES */
+
+#header--logo-nav-bar {
+    /* DISPLAY AND POSITION */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--blue-gray);
+    border-bottom: var(--main-yellow) solid 1px;
+    
+}
+ 
+#logo {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    margin: 10px 30px 10px 30px;
+}
+
+#nav-bar--menu-button div {
+    display: flex;
+    align-items: center;
+
+    /* COLORS AND OTHER STYLES */
+    height: 62px;
+    font-family: var(--main-font);
+    border-left: var(--main-yellow) solid 5px;
+    transition-property: font-weight;
+    transition-duration: 0.2s;
+}
+
+#nav-bar--menu-button div img {
+    margin: 0 10px;
+}
+
+#menu-button {
+    /* DIMENSIONS */
+    padding: 10px 0 10px 10px;
+    font-size: 1.6rem;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#menu-arrow {
+    /* COLORS AND OTHER STYLES */
+    filter: invert(1);
+}
+
+.menu--item {
+    /* DISPLAY AND POSITION */
+    display: none;
+
+    /* DIMENSIONS */
+    padding: 10px 0 10px 10px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    border-left: var(--main-yellow) solid 1px;
+    transition-property: border-left;
+    transition-duration: 0.2s;
+}
+
+.menu--item:hover {
+    /* COLORS AND OTHER STYLES */
+    border-left: var(--main-yellow) solid 5px;
+}
+
+#menu--current-page {
+    /* COLORS AND OTHER STYLES */
+    font-weight: bolder;
+    border-left: var(--main-yellow) solid 20px;
+    
+}

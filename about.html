@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Arnaldo Cisneros</title>
+    <link rel="stylesheet" href="./css/general-styles.css">
+    <link rel="stylesheet" href="./css/logo-nav-bar-styles.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/footer-styles.css">
     <script src="./js/script.js"></script>
     <!-- FONTS IMPORT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,13 +21,15 @@
 
     <!-- LOGO AND NAVIGATION BAR -->
     <div id="header--logo-nav-bar">
-        <img id="logo" src="./resources/placeholder/logo-placeholder2.png" alt="" height="60px">
+        
+        <a href="./index.html"><img id="logo" src="./resources/img/logo_small(3).png" alt="" width="120px"></a>
+        
         <nav>
     
             <ul id="header--nav-bar">
                 <li id="nav-bar--menu-button">
-                    <div>
-                        <button id="menu-button" type="button" onclick="clickMenuButton()">MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow" onclick="clickMenuButton()">
+                    <div onclick="clickMenuButton()">
+                        <button id="menu-button" type="button" >MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow">
                     </div>
                     <li class="menu--item" >
                         <a href="./index.html">HOME</a>
@@ -36,7 +41,7 @@
                         <a href="./portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="menu--item" id="menu--current-page">
-                        <a href="#">ABOUT</a>
+                        <a href="#" >ABOUT</a>
                     </li>
                     <li class="menu--item">
                         <a href="./contact.html">CONTACT</a>
@@ -70,8 +75,10 @@
 
         <!-- LOGO AND CONTACT INVITATION -->
         <section id="footer--logo-contact-section">
-                <img src="./resources/placeholder/logo-placeholder2.png" alt="" height="60px">
+            <a href="./contact.html">
+                <img src="./resources/img/logo_small_icon_only_inverted(1).png" alt="" height="60px">
                 <p>Arnaldo Cisneros. 2021</p>
+            </a>   
         </section>
 
     </footer>
