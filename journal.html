@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal | Arnaldo Cisneros</title>
+    <link rel="stylesheet" href="./css/journal.css">
+    <script src="./js/script.js"></script>
+    <!-- FONTS IMPORT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- LOGO AND NAVIGATION BAR -->
+    <div id="header--logo-nav-bar">
+        <img id="logo" src="./resources/placeholder/logo-placeholder2.png" alt="" height="60px">
+        <nav>
+    
+            <ul id="header--nav-bar">
+                <li id="nav-bar--menu-button">
+                    <div>
+                        <button id="menu-button" type="button" onclick="clickMenuButton()">MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow" onclick="clickMenuButton()">
+                    </div>
+                    <li class="menu--item" >
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="menu--item" id="menu--current-page">
+                        <a href="#">JOURNAL</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="./portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="./contact.html">CONTACT</a>
+                    </li>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
     <p>JOURNAL</p>
-    <a href="./index.html">HOME</a>
 </body>
 </html>
