@@ -20,3 +20,15 @@ function clickMenuButton () {
         menuDeploy=true;
     }
 }
+
+function hideMenu() {
+    if (menuDeploy) {
+        // Code to hide menu
+        subMenus= document.getElementsByClassName('menu--item')
+        for (i = 0; i < subMenus.length ;i++) {
+            subMenus[i].style.display='none';
+        }
+        document.getElementById('menu-arrow').style.transform='rotate(0deg)'
+        menuDeploy=false;
+    } 
+}

@@ -109,6 +109,7 @@ main {
     /* DIMENSIONS */
 
     /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
 }
 
 main h2 {
@@ -125,7 +126,55 @@ main h2 {
     color: var(--blue-gray);
 }
 
-#main--portfolio-section a {
+#main--portfolio-section div img {
+    /* DISPLAY AND POSITION */
+    align-items: center;
+}
+
+#main--portfolio-section div {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     /* DIMENSIONS */
-    margin-left: 40px;
+    margin: 20px 0px;
+}
+
+#main--portfolio-section div p {
+    /* DIMENSIONS */
+    margin: 10px 0px 0 0;
+}
+
+.project-name {
+    /* DISPLAY AND POSITION */
+        
+    /* DIMENSIONS */
+    padding-left: 20px;
+    
+    /* COLORS AND OTHER STYLES */
+    color: var(--main-yellow);
+    font-weight: bolder;
+}
+
+.project-date {
+    /* DISPLAY AND POSITION */
+        
+    /* DIMENSIONS */
+    padding-left: 20px;
+    
+    /* COLORS AND OTHER STYLES */
+    font-size: 1.2rem;
+}
+
+#see-portfolio {
+    /* DIMENSIONS */
+    margin-left: 20px;
+
+    /* COLORS AND OTHER STYLES */
+    padding: 3px 10px;
+    
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-weight: 1000;
 }

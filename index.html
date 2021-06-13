@@ -53,7 +53,7 @@
     </div>
 
     <!-- HEADER SECTION -->
-    <header>
+    <header onclick="hideMenu()">
         
         <!-- WEB BANNER -->
         <div id="header--web-banner">
@@ -64,7 +64,7 @@
                 <p id="nickname2">call me Arnold!</p>
                 <p>and i'm a full stack developer<br>located in Medellín, Colombia.</p>
             </div>
-            <img id='web-banner--image' src="./resources/placeholder/freelancer.jpg" alt="">
+            <img id='web-banner--image' src="https://images.pexels.com/photos/4258192/pexels-photo-4258192.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
         </div>
 
         <!-- SLOGAN SECTION -->
@@ -79,7 +79,7 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main>
+    <main onclick="hideMenu()">
 
         <!-- ARTICLES SECTION -->
         <section id="main--articles-section">
@@ -93,14 +93,18 @@
             <h2>
                 Portfolio highlights
             </h2>
-            <div></div>
-            <a href="./portfolio.html">See full Portfolio</a>
+            <div>
+                <img src="https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623609695/uno-python-cover.png" alt="" width="90%">
+                <a href="./portfolio-files/uno-python.html"><p class="project-name">"UNO!" card game in Python</p></a>
+                <p class="project-date">2020 - 2021</p>
+            </div>
+            <a href="./portfolio.html" id="see-portfolio">See full portfolio</a>
         </section>
 
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer>
+    <footer onclick="hideMenu()">
 
         <!-- SOCIAL MEDIA LINKS -->
         <section id="footer--social-media-section">
@@ -108,11 +112,11 @@
             <p>Follow me!</p>
             
             <div>
-                <a href="https://github.com/arnaldo10cisne"><img id="github-icon" src="./resources/icons/github-icon.png" alt="" width="50px"></a>
+                <a href="https://github.com/arnaldo10cisne" target="_blank" rel="noopener noreferrer"><img id="github-icon" src="./resources/icons/github-icon.png" alt="" width="50px"></a>
 
-                <a href="https://www.linkedin.com/in/arnaldo-cisneros-a36a1718a/"><img id="linkedin-icon" src="./resources/icons/linkedin-icon.png" alt="" width="50px"></a>
+                <a href="https://www.linkedin.com/in/arnaldo-cisneros-a36a1718a/" target="_blank" rel="noopener noreferrer"><img id="linkedin-icon" src="./resources/icons/linkedin-icon.png" alt="" width="50px"></a>
 
-                <a href="https://www.instagram.com/arnaldo10cisne/"><img id="instagram-icon" src="./resources/icons/instagram-icon.png" alt="" width="50px"></a>
+                <a href="https://www.instagram.com/arnaldo10cisne/" target="_blank" rel="noopener noreferrer"><img id="instagram-icon" src="./resources/icons/instagram-icon.png" alt="" width="50px"></a>
             </div>
             
 
