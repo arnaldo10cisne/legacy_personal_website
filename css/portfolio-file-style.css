@@ -1,0 +1,155 @@
+/* MAIN STYLES  */
+main {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main section {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    margin: 25px 0px 8px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 10vw;
+    color: var(--main-yellow);
+    font-family: var(--main-font);
+}
+
+#project-img {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin: 10px 0px;
+
+    /* COLORS AND OTHER STYLES */
+    
+}
+
+#general-info-grid {
+    /* DISPLAY AND POSITION */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+    /* DIMENSIONS */
+    width: 90%;
+
+    /* COLORS AND OTHER STYLES */
+    
+}
+
+.type-column {
+    /* DISPLAY AND POSITION */
+    justify-self: center;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    font-weight: 700;
+    color: var(--main-yellow);
+    border-bottom: 1px solid var(--main-yellow);
+}
+
+.content-column {
+    /* DISPLAY AND POSITION */
+    justify-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    grid-column: 2/4;
+
+    /* COLORS AND OTHER STYLES */
+    border-bottom: 1px solid var(--main-yellow);
+}
+
+main section h2 {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin: 10px 0px;
+    padding: 0 10px;
+
+    /* COLORS AND OTHER STYLES */
+    color: var(--blue-gray);
+    background-color: var(--main-yellow);
+    font-family: var(--main-font);
+}
+
+main section p {
+    /* DISPLAY AND POSITION */
+    text-align: justify;
+
+    /* DIMENSIONS */
+    width: 90%;
+    margin: 10px 0px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--content-font);
+}
+
+#screens-grid {
+    /* DISPLAY AND POSITION */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+    /* DIMENSIONS */
+    margin: 10px 0;
+    width: 90%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+.project-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-screen img {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    justify-self: center;
+
+    /* DIMENSIONS */
+    width: 100px;
+    height: 100px;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+#github-link {
+    /* DIMENSIONS */
+    margin-top: 10px;
+    padding: 3px 10px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-weight: 1000;
+}

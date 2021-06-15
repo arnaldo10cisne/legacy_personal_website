@@ -4,8 +4,121 @@ main {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-grow: 1;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    margin: 25px 0px 0px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 23vw;
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+}
+
+main h2 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0 10px 0;
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-family: var(--main-font);
+}
+
+main p {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    width: 90%;
+    margin: 10px 0 20px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+}
+
+#grid-container {
+    /* DISPLAY AND POSITION */
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    /* DIMENSIONS */
+    width: 90%;
+}
+
+main h3{
+    /* DISPLAY AND POSITION */
+    text-align: center;
 
     /* DIMENSIONS */
 
     /* COLORS AND OTHER STYLES */
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    color: var(--main-yellow);
+}
+
+#name-h3 {
+
+}
+
+#name-input {
+    grid-column: 2/4;
+}
+
+#email-h3 {
+    
+}
+
+#email-input {
+    grid-column: 2/4;
+}
+
+#message-h3 {
+    grid-column: 1/4;
+}
+
+#message-input {
+    grid-column: 1/4;
+
+    height: 85px;
+}
+
+main button {
+    /* DISPLAY AND POSITION */
+    text-align: center;
+
+    /* DIMENSIONS */
+    margin-top: 20px;
+    padding: 10px 25px;
+
+    /* COLORS AND OTHER STYLES */
+    border-radius: 15px;
+    font-weight: 700;
+    background-color: var(--main-yellow);
+    font-size: 2rem;
+    font-family: var(--main-font);
+    color: var(--blue-gray);
 }

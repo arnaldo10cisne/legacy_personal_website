@@ -124,6 +124,117 @@ main h2 {
     font-family: var(--main-font);
     background-color: var(--main-yellow);
     color: var(--blue-gray);
+    font-weight: 400;
+}
+
+main h3 {
+    /* DISPLAY AND POSITION */
+        
+    /* DIMENSIONS */
+    margin-top: 10px;
+    font-size: 1.6rem;
+    
+    /* COLORS AND OTHER STYLES */
+    color: var(--main-yellow);
+    font-weight: 500;
+}
+
+#main--articles-section {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+        
+    /* DIMENSIONS */
+    
+    /* COLORS AND OTHER STYLES */
+
+}
+
+#main--articles-section div {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+        
+    /* DIMENSIONS */
+    width: 80%;
+    margin: 15px 0px;
+    
+    /* COLORS AND OTHER STYLES */
+
+}
+
+#main--articles-section div a {
+    /* DISPLAY AND POSITION */
+    align-self: flex-end;
+        
+    /* DIMENSIONS */
+    
+    /* COLORS AND OTHER STYLES */
+
+}
+
+.article-date {
+    /* DISPLAY AND POSITION */
+        
+    /* DIMENSIONS */
+    
+    /* COLORS AND OTHER STYLES */
+    font-style: italic;
+    font-size: 1.4rem;
+
+}
+
+.article-title {
+    /* DISPLAY AND POSITION */
+    text-align: center;
+        
+    /* DIMENSIONS */
+    margin-top: 10px;
+    width: 100%;
+    
+    /* COLORS AND OTHER STYLES */
+    font-weight: 600;
+    color: var(--main-yellow);
+    
+}
+
+.article-sample {
+    /* DISPLAY AND POSITION */
+        
+    /* DIMENSIONS */
+    margin-top: 10px;
+    
+    /* COLORS AND OTHER STYLES */
+    text-align: justify;
+    font-family: var(--content-font);
+    
+}
+
+.article-read-more {
+    /* DISPLAY AND POSITION */
+    text-align: end;
+        
+    /* DIMENSIONS */
+    margin-top: 10px;
+    
+    /* COLORS AND OTHER STYLES */
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+#see-journal {
+    /* DIMENSIONS */
+    margin-left: 20px;
+    padding: 3px 10px;
+    width: 15.5rem;
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-weight: 1000;
 }
 
 #main--portfolio-section div img {
@@ -146,17 +257,6 @@ main h2 {
     margin: 10px 0px 0 0;
 }
 
-.project-name {
-    /* DISPLAY AND POSITION */
-        
-    /* DIMENSIONS */
-    padding-left: 20px;
-    
-    /* COLORS AND OTHER STYLES */
-    color: var(--main-yellow);
-    font-weight: bolder;
-}
-
 .project-date {
     /* DISPLAY AND POSITION */
         
@@ -170,10 +270,9 @@ main h2 {
 #see-portfolio {
     /* DIMENSIONS */
     margin-left: 20px;
+    padding: 3px 10px;
 
     /* COLORS AND OTHER STYLES */
-    padding: 3px 10px;
-    
     background-color: var(--main-yellow);
     color: var(--blue-gray);
     font-weight: 1000;

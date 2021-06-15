@@ -4,8 +4,72 @@ main {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-grow: 1;
 
     /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    margin: 25px 0px 8px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 25vw;
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+}
+
+main div {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+
+    /* DIMENSIONS */
+    margin: 20px 0px;
+    width: 90%;
+    padding-bottom: 20px;
+
+    /* COLORS AND OTHER STYLES */
+    border-bottom: var(--main-yellow) 1px solid;
+
+}
+
+.article-date {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin-bottom: 5px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.article-title a{
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    color: var(--main-yellow);
+}
+
+.article-sample {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin-top: 20px;
 
     /* COLORS AND OTHER STYLES */
 }

@@ -4,8 +4,81 @@ main {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    flex-grow: 1;
 
     /* DIMENSIONS */
+    width: 100%;
 
     /* COLORS AND OTHER STYLES */
 }
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    justify-self: center;
+
+    /* DIMENSIONS */
+    margin: 25px 0px 8px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 30vw;
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+}
+
+main h2 {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin: 10px 0px;
+    padding: 0 10px;
+
+    /* COLORS AND OTHER STYLES */
+    color: var(--blue-gray);
+    background-color: var(--main-yellow);
+    font-family: var(--main-font);
+}
+
+ main p {
+    /* DISPLAY AND POSITION */
+    text-align: justify;
+
+    /* DIMENSIONS */
+    width: 90%;
+    margin: 10px 0px;
+    padding: 0 10px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--content-font);
+}
+
+main section {
+    /* DISPLAY AND POSITION */
+    display:flex;
+    flex-direction: column;
+
+    /* DIMENSIONS */
+    width: 90%;
+
+    /* COLORS AND OTHER STYLES */
+    
+}
+
+main h3 {
+    /* DISPLAY AND POSITION */
+    align-self: flex-start;
+    text-align: left;
+
+    /* DIMENSIONS */
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0 10px;
+
+    /* COLORS AND OTHER STYLES */
+    color: var(--main-yellow);
+    font-size: 1.5rem;
+    font-family: 'Courgette';
+}
+

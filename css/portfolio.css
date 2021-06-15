@@ -4,9 +4,78 @@ main {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-grow: 1;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    margin: 25px 0px 8px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 23vw;
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+}
+
+h2 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+    padding: 5px 0;
+    margin: 25px 0;
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-family: var(--main-font);
+}
+
+main a {
+    color: var(--main-yellow);
+}
+
+main div {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+.project-name {
+    /* DISPLAY AND POSITION */
+
+    /* DIMENSIONS */
+    margin: 10px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+}
+
+.project-date {
+    /* DISPLAY AND POSITION */
 
     /* DIMENSIONS */
 
     /* COLORS AND OTHER STYLES */
-    
+    font-family: var(--main-font);
+    font-style: italic;
 }
