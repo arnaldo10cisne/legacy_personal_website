@@ -43,7 +43,7 @@ main h2 {
 
  main p {
     /* DISPLAY AND POSITION */
-    text-align: justify;
+    text-align: left;
 
     /* DIMENSIONS */
     width: 90%;
@@ -69,7 +69,7 @@ main section {
 main h3 {
     /* DISPLAY AND POSITION */
     align-self: flex-start;
-    text-align: left;
+    text-align: center;
 
     /* DIMENSIONS */
     width: 100%;
@@ -77,8 +77,71 @@ main h3 {
     padding: 0 10px;
 
     /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
     color: var(--main-yellow);
-    font-size: 1.5rem;
-    font-family: 'Courgette';
+    font-size: 2rem;
+}
+
+#certificates-section {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* DIMENSIONS */
+    margin: 10px 0;
+    width: 100%;
+    
+
+    /* COLORS AND OTHER STYLES */
+    
+}
+
+#certificates-rail {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+.certificate {
+/* DISPLAY AND POSITION */
+display: flex;
+flex-direction: column;
+align-items: center;
+
+/* DIMENSIONS */
+min-width: 100vw;
+width: 100vw;
+
+/* COLORS AND OTHER STYLES */
+}
+
+.certificate a {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* DIMENSIONS */
+    
+    /* COLORS AND OTHER STYLES */
+    }
+
+#see-certificates {
+    /* DIMENSIONS */
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-family: var(--main-font);
+    font-weight: 1000;
 }
 

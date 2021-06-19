@@ -1,4 +1,3 @@
-/* MAIN STYLES  */
 main {
     /* DISPLAY AND POSITION */
     display: flex;
@@ -10,18 +9,6 @@ main {
     /* COLORS AND OTHER STYLES */
 }
 
-main section {
-    /* DISPLAY AND POSITION */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* DIMENSIONS */
-    width: 90%;
-
-    /* COLORS AND OTHER STYLES */
-}
-
 main h1 {
     /* DISPLAY AND POSITION */
     align-self: center;
@@ -29,7 +16,8 @@ main h1 {
     text-align: center;
 
     /* DIMENSIONS */
-    margin: 25px 0px 8px 0;
+    width: 95%;
+    margin: 20px 0px 8px 0;
 
     /* COLORS AND OTHER STYLES */
     font-size: 8vw;
@@ -37,48 +25,55 @@ main h1 {
     font-family: var(--main-font);
 }
 
-#article-date {
+#go-back-button {
     /* DISPLAY AND POSITION */
-    
+    align-self: flex-start;
 
     /* DIMENSIONS */
+    margin: 20px 0 0 20px;
+    padding: 3px 10px;
     
 
     /* COLORS AND OTHER STYLES */
-    font-weight: 500;
     font-family: var(--main-font);
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-weight: 1000;
 }
 
-#ownership {
+#click-picture {
     /* DISPLAY AND POSITION */
-    
 
     /* DIMENSIONS */
-    margin: 10px 0 30px 0;
 
     /* COLORS AND OTHER STYLES */
-    font-weight: 500;
     font-family: var(--main-font);
-    color: var(--main-yellow);
 }
 
-article {
+h2 {
     /* DISPLAY AND POSITION */
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 
     /* DIMENSIONS */
-    width: 90%;
+    width: 100%;
+    padding: 5px 0;
+    margin: 25px 0;
 
     /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-family: var(--main-font);
 }
-article p {
+
+#about-course {
     /* DISPLAY AND POSITION */
+    align-self: center;
     text-align: justify;
 
     /* DIMENSIONS */
+    width: 80%;
 
     /* COLORS AND OTHER STYLES */
+    font-family: var(--content-font);
 }

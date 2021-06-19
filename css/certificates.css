@@ -1,0 +1,126 @@
+
+
+main {
+    /* DISPLAY AND POSITION */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-grow: 1;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+main h1 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+
+    /* DIMENSIONS */
+    margin: 33px 0px 8px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-size: 17vw;
+    color: var(--main-yellow);
+    font-family: var(--title-font);
+}
+
+h2 {
+    /* DISPLAY AND POSITION */
+    align-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+    padding: 5px 0;
+    margin: 25px 0;
+
+    /* COLORS AND OTHER STYLES */
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-family: var(--main-font);
+}
+
+.certificates-table {
+    /* DISPLAY AND POSITION */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-y: scroll;
+
+    /* DIMENSIONS */
+    width: 90%;
+    max-height: 43vh;
+
+    /* COLORS AND OTHER STYLES */
+    
+    
+}
+
+.platzi-course-section {
+    /* DISPLAY AND POSITION */
+    grid-column: 1/5;
+    text-align: center;
+
+    /* DIMENSIONS */
+    padding: 10px 0;
+    margin: 5px 0;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.course-container {
+    /* DISPLAY AND POSITION */
+    grid-column: 1/5;
+    display: grid;
+    align-items: center;
+
+    /* DIMENSIONS */
+    margin: 2px 10px;
+
+    /* COLORS AND OTHER STYLES */
+    
+}
+
+.course-container a {
+    /* DISPLAY AND POSITION */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.397);
+}
+
+.course-icon {
+    /* DISPLAY AND POSITION */
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+
+    /* DIMENSIONS */
+    padding: 2px 0;
+    width: 50px;
+
+    /* COLORS AND OTHER STYLES */
+}
+
+.course-name {
+    /* DISPLAY AND POSITION */
+    grid-column: 2/5;
+    align-self: center;
+
+    /* DIMENSIONS */
+
+    /* COLORS AND OTHER STYLES */
+    
+}
