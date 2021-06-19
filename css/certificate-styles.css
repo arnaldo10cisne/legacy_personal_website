@@ -66,14 +66,50 @@ h2 {
     font-family: var(--main-font);
 }
 
-#about-course {
+#general-info-grid {
     /* DISPLAY AND POSITION */
     align-self: center;
-    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 
     /* DIMENSIONS */
-    width: 80%;
+    width: 90%;
 
     /* COLORS AND OTHER STYLES */
+    
+}
+
+#general-info-grid a {
+    display: flex;
+    justify-content: center;
+
+}
+
+.type-column {
+    /* DISPLAY AND POSITION */
+    justify-self: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */
+    font-weight: 700;
+    color: var(--main-yellow);
+    border-bottom: 1px solid var(--main-yellow);
+    font-family: var(--main-font);
+}
+
+.content-column {
+    /* DISPLAY AND POSITION */
+    justify-self: center;
+    text-align: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+    grid-column: 2/4;
+
+    /* COLORS AND OTHER STYLES */
+    border-bottom: 1px solid var(--main-yellow);
     font-family: var(--content-font);
 }

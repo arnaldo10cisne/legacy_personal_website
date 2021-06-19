@@ -51,3 +51,8 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.in-text-link {
+    text-decoration: underline;
+    color: rgb(96, 172, 202);
+}

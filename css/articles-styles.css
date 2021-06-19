@@ -22,6 +22,22 @@ main section {
     /* COLORS AND OTHER STYLES */
 }
 
+#go-back-button {
+    /* DISPLAY AND POSITION */
+    align-self: flex-start;
+
+    /* DIMENSIONS */
+    margin: 20px 0 20px 20px;
+    padding: 3px 10px;
+    
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    background-color: var(--main-yellow);
+    color: var(--blue-gray);
+    font-weight: 1000;
+}
+
 main h1 {
     /* DISPLAY AND POSITION */
     align-self: center;
