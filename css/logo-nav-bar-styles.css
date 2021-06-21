@@ -106,13 +106,7 @@
 
 
 
-/* TABLET */
-@media (min-width: 760px) {
-
-    
-
-}
-
+/* DESKTOP */
 @media (min-width: 1024px) {
 
     #logo {

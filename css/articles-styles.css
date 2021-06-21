@@ -98,3 +98,65 @@ article p {
 
     /* COLORS AND OTHER STYLES */
 }
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    #main--picture-section img {
+        max-width: 40vw;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    #main--picture-section {
+        max-width: 400px;
+        position: absolute;
+        top: 100px;
+        left: 60vw;
+    }
+
+    #main--picture-section img {
+        max-width: 400px;
+    }
+
+    main h1 {
+        z-index: 2;
+        text-shadow: 3px 1px 0px var(--blue-gray);
+        text-align: start;
+        font-size: 5vw;
+        margin-top: 100px;
+    }
+
+    #article-date {
+        align-self: flex-start;
+    }
+
+    #ownership {
+        align-self: flex-start;
+    }
+
+    article {
+        max-width: 60vw;
+        margin: 100px 0px;
+        font-size: 2rem;
+    }
+
+    article p {
+        text-align: start;
+    }
+
+    article p:nth-child(2) {
+        width: 500px;
+    }
+
+}

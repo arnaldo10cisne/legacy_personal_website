@@ -36,7 +36,7 @@ h2 {
     /* DIMENSIONS */
     width: 100%;
     padding: 5px 0;
-    margin: 25px 0;
+    margin: 20px 0;
 
     /* COLORS AND OTHER STYLES */
     background-color: var(--main-yellow);
@@ -49,10 +49,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-y: scroll;
+    justify-self: stretch;
+    flex-grow: 1;
 
     /* DIMENSIONS */
+    margin: auto 0;
     width: 90%;
-    max-height: 43vh;
+    max-height: 50vh;
 
     /* COLORS AND OTHER STYLES */
     
