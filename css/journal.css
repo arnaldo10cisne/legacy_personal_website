@@ -73,3 +73,32 @@ main div {
 
     /* COLORS AND OTHER STYLES */
 }
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    main h1 {
+        font-size: 15vw;
+        width: 90%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    main h1 {
+        font-size: 10vw;
+    }
+
+}
