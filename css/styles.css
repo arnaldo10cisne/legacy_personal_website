@@ -76,7 +76,8 @@ header {
         /* COLORS AND OTHER STYLES */
         font-weight:initial;
         color: var(--main-yellow);
-        font-family: var(--name-font);
+        font-family: var(--main-font);
+        font-weight: 700;
 }
 
 #header--slogan {
@@ -205,19 +206,6 @@ main h3 {
     /* COLORS AND OTHER STYLES */
     text-align: justify;
     font-family: var(--content-font);
-    
-}
-
-.article-read-more {
-    /* DISPLAY AND POSITION */
-    text-align: end;
-        
-    /* DIMENSIONS */
-    margin-top: 10px;
-    
-    /* COLORS AND OTHER STYLES */
-    font-style: italic;
-    text-decoration: underline;
     
 }
 
