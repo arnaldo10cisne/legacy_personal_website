@@ -15,7 +15,6 @@
     background-color: var(--blue-gray);
     background-image: url('../resources/img/stars-background.jpg');
     background-blend-mode:soft-light;
-    border-bottom: var(--main-yellow) solid 1px;
     
 }
  
