@@ -169,3 +169,73 @@ main section p {
     color: var(--blue-gray);
     font-weight: 1000;
 }
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    main h1 {
+        font-size: 7vw;
+        width: 90%;
+    }
+
+    #project-img {
+        max-width: 50vw;
+        height: 50vw;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    main h1 {
+        font-size: 5.5vw;
+    }
+
+    #project-img {
+        max-width: 25vw;
+        height: 24vw;
+    }
+
+    #general-info-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 40%;
+    }
+
+    .content-column {
+        width: 100%;
+        text-align: start;
+    }
+
+    .type-column {
+        width: 100%;
+    }
+
+    main section p {
+        width: 40%;
+    }
+
+    #screens-grid {
+        width: 50%;
+    }
+
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+
+    main h1 {
+        font-size: 4vw;
+    }
+ 
+ }

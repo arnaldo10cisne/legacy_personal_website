@@ -4,7 +4,7 @@ main {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 
     flex-grow: 1;
@@ -80,16 +80,8 @@ main h3{
     color: var(--main-yellow);
 }
 
-#name-h3 {
-
-}
-
 #name-input {
     grid-column: 2/4;
-}
-
-#email-h3 {
-    
 }
 
 #email-input {
@@ -121,4 +113,74 @@ main button {
     font-size: 2rem;
     font-family: var(--main-font);
     color: var(--blue-gray);
+}
+
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+
+
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    main h1 {
+        font-size: 15vw;
+    }
+
+    #message-h3 {
+        margin-top: 20px;
+    }
+
+    #grid-container {
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    #message-input {
+        height: 200px;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    main h1 {
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    #grid-container {
+        width: 60%;
+    }
+
+    #grid-container > h3 {
+        font-size: 2.2rem;
+    }
+
+    #message-input {
+        height: 300px;
+    }
+
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+
+    main h1 {
+        font-size: 5.5vw;
+    }
+
+    #grid-container {
+        width: 50%;
+    }
+
 }

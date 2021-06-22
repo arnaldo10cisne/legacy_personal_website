@@ -20,7 +20,7 @@ main h1 {
     align-self: center;
 
     /* DIMENSIONS */
-    margin: 25px 0px 8px 0;
+    margin: 25px 0px 0px 0;
 
     /* COLORS AND OTHER STYLES */
     font-size: 23vw;
@@ -36,7 +36,7 @@ h2 {
     /* DIMENSIONS */
     width: 100%;
     padding: 5px 0;
-    margin: 25px 0;
+    margin: 10px 0;
 
     /* COLORS AND OTHER STYLES */
     background-color: var(--main-yellow);
@@ -90,4 +90,72 @@ main a {
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
     font-style: italic;
+}
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    main h1 {
+        font-size: 15vw;
+    }
+
+    .portfolio-rail {
+        justify-content: center;
+    }
+
+    .portfolio-item {
+        width: 50vw;
+        min-width: 50vw;
+    }
+
+    .portfolio-item img {
+        width: 80%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    main h1 {
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    .portfolio-rail {
+        overflow-x: hidden;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+        width: 33.33vw;
+        min-width: 33.33vw;
+    }
+
+    .portfolio-item img {
+        width: 80%;
+    }
+
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+
+    main h1 {
+        font-size: 5.5vw;
+    }
+
+   .portfolio-item {
+        width: 24vw;
+        min-width: 24vw;
+    }
+
 }

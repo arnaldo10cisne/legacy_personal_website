@@ -20,7 +20,7 @@ main h1 {
     align-self: center;
 
     /* DIMENSIONS */
-    margin: 33px 0px 8px 0;
+    margin: 33px 0px 0px 0;
 
     /* COLORS AND OTHER STYLES */
     font-size: 17vw;
@@ -126,4 +126,54 @@ h2 {
 
     /* COLORS AND OTHER STYLES */
     
+}
+
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+
+
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    main h1 {
+        font-size: 15vw;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    main h1 {
+        font-size: 10vw;
+        width: 90%;
+    }
+
+    .certificates-table {
+        width: 60%;
+    }
+
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+
+    main h1 {
+        font-size: 5.5vw;
+        width: 90%;
+    }
+
+    .certificates-table {
+        width: 50%;
+    }
+
 }

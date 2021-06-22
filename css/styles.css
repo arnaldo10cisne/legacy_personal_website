@@ -45,24 +45,7 @@ header {
 
 }
 
-#nickname1, #nickname2 {
-    /* DISPLAY AND POSITION */
-
-    /* DIMENSIONS */
-    margin-left: 30px;
-
-    /* COLORS AND OTHER STYLES */
-    color: var(--main-yellow);
-    font-family: 'Courgette';
-}
-
-#nickname2 {
-    /* DIMENSIONS */
-    margin-left: 60px;
-}
-
 #web-banner--text :last-child {
-    margin-left: 20px;
     margin-top: 10px;
 }
 
@@ -172,14 +155,14 @@ main h3 {
     padding: 20px;
     
     /* COLORS AND OTHER STYLES */
-    background-color: rgba(32, 33, 77, 0.521);
+    background-color: rgba(32, 33, 77, 0.808);
     border-radius: 20px;
 
 }
 
 #main--articles-section div a {
     /* DISPLAY AND POSITION */
-    align-self: flex-end;
+    align-self: flex-start;
         
     /* DIMENSIONS */
     
@@ -284,6 +267,12 @@ main h3 {
     margin: 10px 0px 0 0;
 }
 
+.project-name {
+    padding: 10px;
+    background-color: rgba(32, 33, 77, 0.808);
+    border-radius: 20px;
+}
+
 .project-date {
     /* DISPLAY AND POSITION */
         
@@ -304,3 +293,80 @@ main h3 {
     color: var(--blue-gray);
     font-weight: 1000;
 }
+
+
+
+
+
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
+
+
+
+
+
+/* TABLET */
+@media (min-width: 760px) {
+    #header--web-banner{
+        width: 70%;
+        align-self: center;
+    }
+
+    #web-banner--text {
+        margin-left: 0px;
+    }
+
+    #web-banner--name {
+        font-size: 6.5rem;
+        line-height: 45pt;
+    }
+
+    #header--slogan {
+        width: 70%;
+    }
+
+    .article-sample-container {
+        width: 50%;
+    }
+
+    .portfolio-item {
+        width: 50vw;
+        min-width: 50vw;
+    }
+    .portfolio-item > img {
+        width: 70%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    #web-banner--name {
+        font-size: 8rem;
+        line-height: 60pt;
+    }
+
+    #portfolio-rail {
+        overflow-x: hidden;
+    }
+
+    .portfolio-item {
+        width: 33.33vw;
+        min-width: 33.33vw;
+    }
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+    #header--web-banner{
+        width: 50%;
+        align-self: center;
+    }
+    #header--slogan {
+        width: 50%;
+    }
+    .article-sample-container {
+        width: 30%;
+    }
+ }

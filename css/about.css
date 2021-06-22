@@ -210,10 +210,9 @@ width: 100vw;
 
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
-
     .certificate {
-        min-width: 25vw;
-        max-width: 25vw;
+        min-width: 24vw;
+        max-width: 24vw;
     }
 
 }

@@ -102,3 +102,12 @@ main div {
     }
 
 }
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+
+    main h1 {
+        font-size: 5.5vw;
+    }
+ 
+ }
