@@ -9,10 +9,12 @@
 
     /*COLORS*/
     --main-yellow: #ead017;
+    --main-yellow-darker:#706f38;
     --light-gray: #9D8D8F;
     --light-brown: #9B786F;
     --strong-gray: #5A5560;
-    --blue-gray: #212136; 
+    --blue-gray: #212136;
+    --blue-gray-transparent: #212136f1; 
 }
 
 /* BASE STYLES */

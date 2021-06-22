@@ -2,9 +2,8 @@ body {
     background-image: url('../resources/img/medellin-large.jpg');
     background-position: 60% 70%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-color: var(--blue-gray);
-    background-blend-mode:overlay
 }
 
 /* HEADER STYLES */
@@ -15,8 +14,12 @@ header {
     flex-direction: column;
 
     /* DIMENSIONS */
+    /* height: calc(100vh - 49.6px); */
+    margin-bottom: -20px;
+    padding-bottom: 20px;
 
     /* COLORS AND OTHER STYLES */
+    background-color: var(--blue-gray-transparent);
 }
 
 #header--web-banner {
@@ -37,7 +40,7 @@ header {
     z-index: 2;
 
     /* DIMENSIONS */
-    margin: 20px 0 0 20px;
+    margin: 20px 0px 0px 20px;
 
     /* COLORS AND OTHER STYLES */
     font-weight: bold;
@@ -88,6 +91,7 @@ header {
     /* DIMENSIONS */
     width: 90%;
     font-size: 1.6rem;
+    margin-bottom: 10px;
 
     /* COLORS AND OTHER STYLES */
 }
@@ -107,11 +111,12 @@ main {
 
 main h2 {
     /* DISPLAY AND POSITION */
+    text-align: center;
         
     /* DIMENSIONS */
     margin: 20px 0px 20px 0px;
-    padding: 3px 5px 3px 50px;
-    width: 80%;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
     
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
@@ -152,11 +157,11 @@ main h3 {
         
     /* DIMENSIONS */
     width: 90%;
-    margin-bottom:15px;
+    margin:15px 0px;
     padding: 20px;
     
     /* COLORS AND OTHER STYLES */
-    background-color: rgba(32, 33, 77, 0.808);
+    background-color: var(--blue-gray-transparent);
     border-radius: 20px;
 
 }
@@ -182,7 +187,7 @@ main h3 {
 
 }
 
-.article-title {
+.home-link {
     /* DISPLAY AND POSITION */
     text-align: center;
         
@@ -194,7 +199,12 @@ main h3 {
     font-size: 2rem;
     font-weight: 600;
     color: var(--main-yellow);
-    
+    transition-property: color;
+    transition-duration: 0.3s; 
+}
+
+.home-link:hover {
+    color: var(--main-yellow-darker); 
 }
 
 .article-sample {
@@ -207,18 +217,6 @@ main h3 {
     text-align: justify;
     font-family: var(--content-font);
     
-}
-
-#see-journal {
-    /* DIMENSIONS */
-    margin-left: 20px;
-    padding: 3px 10px;
-    width: 15.5rem;
-
-    /* COLORS AND OTHER STYLES */
-    background-color: var(--main-yellow);
-    color: var(--blue-gray);
-    font-weight: 1000;
 }
 
 #main--portfolio-section div img {
@@ -234,8 +232,11 @@ main h3 {
 
     /* DIMENSIONS */
     width: 100%;
+    margin: -20px 0px;
+    padding: 20px 0px;
 
     /* COLORS AND OTHER STYLES */
+    background-color: var(--blue-gray-transparent);
 }
 
 .portfolio-item {
@@ -250,15 +251,13 @@ main h3 {
     margin: 20px 0px;
 }
 
+.portfolio-item > img {
+    border-radius: 15px;
+}
+
 #main--portfolio-section div p {
     /* DIMENSIONS */
     margin: 10px 0px 0 0;
-}
-
-.project-name {
-    padding: 10px;
-    background-color: rgba(32, 33, 77, 0.808);
-    border-radius: 20px;
 }
 
 .project-date {
@@ -269,17 +268,6 @@ main h3 {
     
     /* COLORS AND OTHER STYLES */
     font-size: 1.2rem;
-}
-
-#see-portfolio {
-    /* DIMENSIONS */
-    margin-left: 20px;
-    padding: 3px 10px;
-
-    /* COLORS AND OTHER STYLES */
-    background-color: var(--main-yellow);
-    color: var(--blue-gray);
-    font-weight: 1000;
 }
 
 
