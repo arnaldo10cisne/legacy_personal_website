@@ -2,7 +2,7 @@ input {
     font-family: var(--main-font);
     border-radius: 15px;
     border: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0px 15px;
     outline: none;
 }
@@ -11,7 +11,7 @@ textarea {
     font-family: var(--main-font);
     border-radius: 15px;
     border: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 5px 15px;
     outline: none;
 }
@@ -94,7 +94,7 @@ main h3{
     /* DIMENSIONS */
 
     /* COLORS AND OTHER STYLES */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: var(--main-font);
     color: var(--main-yellow);
 }
@@ -150,6 +150,10 @@ main button {
 
 /* TABLET */
 @media (min-width: 760px) {
+    textarea,input {
+        font-size: 1.6rem;
+    }
+    
     main h1 {
         font-size: 15vw;
     }
@@ -166,12 +170,19 @@ main button {
     #message-input {
         height: 200px;
     }
+    main h3 {
+        font-size: 1.5rem;
+    }
 
 }
 
 /* DESKTOP */
 @media (min-width: 1024px) {
 
+    textarea,input {
+        font-size: 2rem;
+    }
+    
     main h1 {
         font-size: 10vw;
         width: 90%;
@@ -188,6 +199,8 @@ main button {
     #message-input {
         height: 300px;
     }
+
+    
 
 }
 
