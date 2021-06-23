@@ -14,16 +14,43 @@
     --light-brown: #9B786F;
     --strong-gray: #5A5560;
     --blue-gray: #212136;
+    --blue-gray-darker: #1a1a2e;
     --blue-gray-transparent: #212136f1; 
 }
 
 /* BASE STYLES */
+
+::-webkit-scrollbar {
+    width: 15px; 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--blue-gray-darker);
+    /* border-radius: 100px; */
+    /* margin: 50px 0px; */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-yellow);
+    border: 1px solid var(--blue-gray-darker)
+    /* border-radius: 100px; */
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-yellow-darker);
+  }
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 
 html {
     font-size: 62.5%;
