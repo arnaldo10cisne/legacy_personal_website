@@ -184,13 +184,60 @@ width: 100vw;
 /* DESKTOP */
 @media (min-width: 1024px) {
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
     main h1 {
+        grid-column: 1/4;
         font-size: 10vw;
     }
 
+    main h2 {
+        text-align: center;
+        justify-self: center;
+        width: 90%;
+    }
+
     main p {
-        width: 50%;
+        align-self: flex-start;
+        justify-self: center;
+        width: 90%;
         font-size: 2rem;
+    }
+
+    #h2-me{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    #h2-work{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    #h2-expertise{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    #h2-education{
+        margin-top: 40px;
+        width: 50%;
+        grid-row: 4/5;
+        grid-column: 1/4;
+    }
+
+    #p-education {
+        width: 50%;
+        grid-column: 1/4;
+    }
+
+    #certificates-section {
+        grid-column: 1/4;
     }
 
     #certificates-rail {
@@ -210,6 +257,24 @@ width: 100vw;
 
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
+
+    main {
+        align-self: center;
+        width: 75%;
+    }
+
+    main p {
+        font-size: 1.8rem;
+    }
+
+    #h2-education {
+        width: 30%;
+    }
+
+    #p-education {
+        width: 30%;
+    }
+
     .certificate {
         min-width: 24vw;
         max-width: 24vw;
