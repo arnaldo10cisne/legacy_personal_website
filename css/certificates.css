@@ -87,8 +87,7 @@ h2 {
     /* DIMENSIONS */
     margin: 2px 10px;
 
-    /* COLORS AND OTHER STYLES */
-    
+    /* COLORS AND OTHER STYLES */ 
 }
 
 .course-container a {
@@ -102,7 +101,15 @@ h2 {
     
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.397);
+    border: 3px solid rgba(128, 128, 128, 0);
+    transition-property: border;
+    transition-duration: 0.2s;
 }
+
+.course-container a:hover {
+    border: 3px solid var(--main-yellow);
+}
+
 
 .course-icon {
     /* DISPLAY AND POSITION */
