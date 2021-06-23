@@ -26,6 +26,16 @@ main h1 {
     font-family: var(--main-font);
 }
 
+main > a img {
+    border: 6px solid var(--blue-gray);
+    border-radius: 100px;
+    transition-property: border;
+    transition-duration: 0.2s;
+}
+main > a img:hover {
+   border: 6px solid var(--main-yellow);
+}
+
 #go-back-button {
     /* DISPLAY AND POSITION */
     align-self: flex-start;

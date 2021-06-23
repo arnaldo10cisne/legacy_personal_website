@@ -63,6 +63,12 @@ main div {
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
     color: var(--main-yellow);
+    transition-property: color;
+    transition-duration: 0.3s; 
+}
+
+.article-title a:hover {
+    color: var(--main-yellow-darker); 
 }
 
 .article-sample {

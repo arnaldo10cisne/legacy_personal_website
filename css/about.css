@@ -66,21 +66,8 @@ main section {
     
 }
 
-.course-name {
-    /* DISPLAY AND POSITION */
-    align-self: flex-start;
-    text-align: center;
 
-    /* DIMENSIONS */
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0 10px;
 
-    /* COLORS AND OTHER STYLES */
-    font-family: var(--main-font);
-    color: var(--main-yellow);
-    font-size: 2rem;
-}
 
 #certificates-section {
     /* DISPLAY AND POSITION */
@@ -131,7 +118,33 @@ width: 100vw;
     /* DIMENSIONS */
     
     /* COLORS AND OTHER STYLES */
-    }
+}
+
+.certificate a img {
+    border: 6px solid var(--blue-gray);
+    border-radius: 100px;
+    transition-property: border;
+    transition-duration: 0.2s;
+}
+.certificate a img:hover {
+   border: 6px solid var(--main-yellow);
+}
+
+.course-name {
+    /* DISPLAY AND POSITION */
+    align-self: flex-start;
+    text-align: center;
+
+    /* DIMENSIONS */
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0 10px;
+
+    /* COLORS AND OTHER STYLES */
+    font-family: var(--main-font);
+    color: var(--main-yellow);
+    font-size: 2rem;
+}
 
 #see-certificates {
     /* DIMENSIONS */

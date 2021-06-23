@@ -1,3 +1,5 @@
+
+
 /* MAIN STYLES */
 
 main {
@@ -46,6 +48,12 @@ h2 {
 
 main a {
     color: var(--main-yellow);
+    transition-property: color;
+    transition-duration: 0.3s; 
+}
+
+main a:hover {
+    color: var(--main-yellow-darker); 
 }
 
 .portfolio-rail {
@@ -79,6 +87,7 @@ main a {
     margin: 10px 0;
 
     /* COLORS AND OTHER STYLES */
+    color: var(--main-yellow);
     font-family: var(--main-font);
 }
 
@@ -91,8 +100,6 @@ main a {
     font-family: var(--main-font);
     font-style: italic;
 }
-
-
 
 
 

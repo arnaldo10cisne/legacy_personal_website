@@ -1,3 +1,22 @@
+input {
+    font-family: var(--main-font);
+    border-radius: 15px;
+    border: none;
+    font-size: 2rem;
+    padding: 0px 15px;
+    outline: none;
+}
+
+textarea {
+    font-family: var(--main-font);
+    border-radius: 15px;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    outline: none;
+}
+
+
 /* MAIN STYLES */
 
 main {
