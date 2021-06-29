@@ -20,6 +20,18 @@
 
 /* BASE STYLES */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    min-width: 320px;
+}
+
 ::-webkit-scrollbar {
   width: 15px; 
 }
@@ -47,19 +59,6 @@
 /* Handle on active */
 ::-webkit-scrollbar-thumb:active {
   background: var(--main-yellow-darker);
-}
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-html {
-    font-size: 62.5%;
-    min-width: 320px;
 }
     
 body {
