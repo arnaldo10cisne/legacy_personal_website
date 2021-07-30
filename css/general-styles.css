@@ -92,6 +92,36 @@ a {
 
 /* CLASSES */
 
+.title {
+  /* DISPLAY AND POSITION */
+  align-self: center;
+
+  /* DIMENSIONS */
+  margin: 25px 0px 0px 0;
+
+  /* COLORS AND OTHER STYLES */
+  font-size: 23vw;
+  color: var(--main-yellow);
+  font-family: var(--title-font);
+}
+
+.section-divider {
+  /* DISPLAY AND POSITION */
+  align-self: center;
+  text-align: center;
+
+  /* DIMENSIONS */
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+
+  /* COLORS AND OTHER STYLES */
+  background-color: var(--main-yellow);
+  color: var(--blue-gray);
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
 .button {
   /* DISPLAY AND POSITION */
   align-self: center;
@@ -115,8 +145,26 @@ a {
   padding: 3px 9px;
 }
 
+@media (min-width: 760px) {
+  .title {
+      font-size: 15vw;
+  }
+}
+
+/* DESKTOP */
 @media (min-width: 1024px) {
+  .title {
+      font-size: 10vw;
+      width: 90%;
+  }
   .button--grid {
-      grid-column: 1/3;
+    grid-column: 1/3;
+  }
+}
+
+/* BIG DESKTOP */
+@media (min-width: 1400px) {
+  .title {
+      font-size: 5.5vw;
   }
 }

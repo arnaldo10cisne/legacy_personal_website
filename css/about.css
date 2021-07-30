@@ -30,15 +30,18 @@ main h1 {
 
 main h2 {
     /* DISPLAY AND POSITION */
+    align-self: center;
+    text-align: center;
 
     /* DIMENSIONS */
     margin: 10px 0px;
-    padding: 0 10px;
+    padding: 5px 10px;
 
     /* COLORS AND OTHER STYLES */
     color: var(--blue-gray);
     background-color: var(--main-yellow);
     font-family: var(--main-font);
+    font-weight: 400;
 }
 
  main p {
