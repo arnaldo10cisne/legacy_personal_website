@@ -1,3 +1,4 @@
+export const header = document.getElementsByTagName('header')
 export const main = document.getElementsByTagName('main')
 export const footer = document.getElementsByTagName('footer')
 

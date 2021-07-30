@@ -131,7 +131,7 @@ const clickMenuButton = () => {
     if (elem.menuBtn.style.display != 'none' && innerWidth<1024) {
         if (menuDeploy) {
             // Code to hide menu
-            for (i = 0; i < subMenus.length ;i++) {
+            for (i = 0; i < elem.subMenus.length ;i++) {
                 elem.subMenus[i].style.display='none';
             }
             elem.menuArrow.style.transform='rotate(0deg)'
@@ -152,6 +152,8 @@ addEventListener("load", checkScreenWidth)
 addEventListener("resize", checkScreenWidth)
 
 elem.menuBtnTrigger.addEventListener("click", clickMenuButton)
+
+elem.header[0].addEventListener("click", hideMenu)
 
 elem.main[0].addEventListener("click", hideMenu)
 
