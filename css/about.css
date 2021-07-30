@@ -5,10 +5,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     flex-grow: 1;
 
     /* DIMENSIONS */
+    padding-top: 60px;
     width: 100%;
 
     /* COLORS AND OTHER STYLES */

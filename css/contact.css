@@ -29,6 +29,7 @@ main {
     flex-grow: 1;
 
     /* DIMENSIONS */
+    padding-top: 60px;
     width: 100%;
 
     /* COLORS AND OTHER STYLES */
