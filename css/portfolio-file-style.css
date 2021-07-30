@@ -158,18 +158,6 @@ main section p {
     /* COLORS AND OTHER STYLES */
 }
 
-#github-link {
-    /* DIMENSIONS */
-    margin-top: 10px;
-    padding: 3px 10px;
-
-    /* COLORS AND OTHER STYLES */
-    font-family: var(--main-font);
-    background-color: var(--main-yellow);
-    color: var(--blue-gray);
-    font-weight: 1000;
-}
-
 
 
 
