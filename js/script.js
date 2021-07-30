@@ -1,4 +1,4 @@
-import * as elem from './elements.js'
+import * as elem from './modules/elements.js'
 
 let i = 0;
 let menuDeploy = false;
