@@ -77,7 +77,7 @@
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
     border-left: var(--main-yellow) solid 1px;
-    transition-property: border-left;
+    transition-property: border-left padding-right;
     transition-duration: 0.2s;
 }
 
@@ -140,7 +140,6 @@
 
     .menu--item:hover {
         /* COLORS AND OTHER STYLES */
-        border-left: var(--main-yellow) solid 5px;
         padding-right: calc(5vw - 4px);
     }
 
