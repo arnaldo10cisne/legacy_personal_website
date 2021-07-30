@@ -29,7 +29,7 @@
     
             <ul id="header--nav-bar">
                 <li id="nav-bar--menu-button">
-                    <div onclick="clickMenuButton()">
+                    <div id="menu-button-trigger">
                         <button id="menu-button" type="button" >MENU</button><img src="../resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow">
                     </div>
                     <li class="menu--item" >
@@ -54,7 +54,7 @@
     </div>
 
     <!-- MAIN SECTION -->
-    <main onclick="hideMenu()">
+    <main>
         <a href="../certificates.html" id="go-back-button"><p>Go back</p></a>
         <h1>PRACTICAL HTML AND CSS COURSE</h1>
         <a href="https://drive.google.com/file/d/1nsgmlesi4ct4gCPhiNJBJ2vlWVpBmhp7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -76,7 +76,7 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer onclick="hideMenu()">
+    <footer>
 
         <!-- SOCIAL MEDIA LINKS -->
         <section id="footer--social-media-section">
@@ -103,6 +103,6 @@
         </section>
 
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

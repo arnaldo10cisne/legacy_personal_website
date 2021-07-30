@@ -29,7 +29,7 @@
     
             <ul id="header--nav-bar">
                 <li id="nav-bar--menu-button">
-                    <div onclick="clickMenuButton()">
+                    <div id="menu-button-trigger">
                         <button id="menu-button" type="button" >MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow">
                     </div>
                     <li class="menu--item" >
@@ -54,14 +54,14 @@
     </div>
 
     <!-- MAIN SECTION -->
-    <main onclick="hideMenu()">
+    <main>
         <h1>Certificates</h1>
 
         <h2>PLATZI</h2>
 
         <div class="certificates-table">
 
-            <p class="platzi-course-section" onclick="htmlAndCssCollapse()" style="background-color: rgb(23, 83, 23);">HTML and CSS <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="html-css-arrow" alt=""></span> </p>
+            <p class="platzi-course-section" id="html-css-list" style="background-color: rgb(23, 83, 23);">HTML and CSS <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="html-css-arrow" alt=""></span> </p>
 
             <div class="course-container html-css-course">
                 <a href="./certificates-files/course-001.html">
@@ -89,7 +89,7 @@
                 </a>
             </div>
 
-            <p class="platzi-course-section" onclick="javascriptCollapse()" style="background-color: rgb(83, 79, 23);">JavaScript <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="js-arrow" alt=""></span></p>
+            <p class="platzi-course-section" id="js-list" style="background-color: rgb(83, 79, 23);">JavaScript <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="js-arrow" alt=""></span></p>
 
             <div class="course-container js-course">
                 <a href="./certificates-files/course-003.html">
@@ -122,7 +122,7 @@
                 </a>
             </div>
 
-            <p class="platzi-course-section" onclick="pythonCollapse()" style="background-color: rgb(23, 74, 83);">Python <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="python-arrow" alt=""></span></p>
+            <p class="platzi-course-section" id="python-list" style="background-color: rgb(23, 74, 83);">Python <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="python-arrow" alt=""></span></p>
 
             <div class="course-container python-course">
                 <a href="./certificates-files/course-011.html">
@@ -131,7 +131,7 @@
                 </a>
             </div>
 
-            <p class="platzi-course-section" onclick="otherCollapse()" style="background-color: rgb(44, 104, 47);">Other courses <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="other-arrow" alt=""></span></p>
+            <p class="platzi-course-section" id="other-list" style="background-color: rgb(44, 104, 47);">Other courses <span><img src="./resources/icons/triangle-icon.png" width="15" class="arrow" id="other-arrow" alt=""></span></p>
 
             <div class="course-container other-course">
                 <a href="./certificates-files/course-005.html">
@@ -168,7 +168,7 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer onclick="hideMenu()">
+    <footer>
 
         <!-- SOCIAL MEDIA LINKS -->
         <section id="footer--social-media-section">
@@ -196,6 +196,6 @@
 
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

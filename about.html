@@ -29,7 +29,7 @@
     
             <ul id="header--nav-bar">
                 <li id="nav-bar--menu-button">
-                    <div onclick="clickMenuButton()">
+                    <div id="menu-button-trigger">
                         <button id="menu-button" type="button" >MENU</button><img src="./resources/icons/triangle-icon.png" alt="" width="15" id="menu-arrow">
                     </div>
                     <li class="menu--item" >
@@ -54,7 +54,7 @@
     </div>
     
     <!-- MAIN SECTION -->
-    <main onclick="hideMenu()">
+    <main>
         <h1>About</h1>
         <h2 id="h2-me">About me</h2>
         <p id="p-me">I was born in the city of Caracas, Venezuela. When i'm not working in my computer, I like to play piano, read books or play videogames. I really like traveling and making new friends, and I'd rather go to dinner with them, than going to parties and loud places. I love to have deep conversations with other people. And, last but not least, I'm more of a cat person myself.</p>
@@ -105,7 +105,7 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer onclick="hideMenu()">
+    <footer>
 
         <!-- SOCIAL MEDIA LINKS -->
         <section id="footer--social-media-section">
@@ -133,6 +133,6 @@
 
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

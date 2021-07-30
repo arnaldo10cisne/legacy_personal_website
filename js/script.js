@@ -1,7 +1,6 @@
-const subMenus = document.getElementsByClassName('menu--item')
-const menuArrow = document.getElementById('menu-arrow')
-const menuBtn = document.getElementById("menu-button")
+import * as elem from './elements.js'
 
+let i = 0;
 let menuDeploy = false;
 let htmlAndCssDeploy = true;
 let javascriptDeploy = true;
@@ -10,18 +9,140 @@ let otherDeploy = true;
 
 const checkScreenWidth = () => {
     if (innerWidth >= 1024) {
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='inline-block';
+        for (i = 0; i < elem.subMenus.length ;i++) {
+            elem.subMenus[i].style.display='inline-block';
         }
     } else {
         if (!menuDeploy) {
-            for (i = 0; i < subMenus.length ;i++) {
-                subMenus[i].style.display='none';
+            for (i = 0; i < elem.subMenus.length ;i++) {
+                elem.subMenus[i].style.display='none';
             } 
         } else {
-            for (i = 0; i < subMenus.length ;i++) {
-                subMenus[i].style.display='block';
+            for (i = 0; i < elem.subMenus.length ;i++) {
+                elem.subMenus[i].style.display='block';
             } 
+        }
+    }
+}
+
+const htmlAndCssCollapse = () => {
+
+    if (htmlAndCssDeploy) {
+        // HIDE COURSES
+        // subMenus= document.getElementsByClassName('html-css-course')
+        for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
+            elem.courseListHtmlAndCss[i].style.display='none';
+        }
+        elem.htmlAndCssArrow.style.transform='rotate(0deg)'
+        htmlAndCssDeploy=false;
+    } else {
+        // SHOW COURSES
+        // subMenus= document.getElementsByClassName('html-css-course')
+        for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
+            elem.courseListHtmlAndCss[i].style.display='block';
+        }
+        elem.htmlAndCssArrow.style.transform='rotate(180deg)'
+        htmlAndCssDeploy=true;
+    }
+
+}
+
+const javascriptCollapse = () => {
+
+    if (javascriptDeploy) {
+        // HIDE COURSES
+        // subMenus= document.getElementsByClassName('js-course')
+        for (i = 0; i < elem.courseListJs.length ;i++) {
+            elem.courseListJs[i].style.display='none';
+            // subMenus[i].style.display='none';
+        }
+        elem.jsArrow.style.transform='rotate(0deg)'
+        javascriptDeploy=false;
+    } else {
+        // SHOW COURSES
+        // subMenus= document.getElementsByClassName('js-course')
+        for (i = 0; i < elem.courseListJs.length ;i++) {
+            elem.courseListJs[i].style.display='block';
+        }
+        elem.jsArrow.style.transform='rotate(180deg)'
+        javascriptDeploy=true;
+    }
+
+}
+
+const pythonCollapse = () => {
+
+    if (pythonDeploy) {
+        // HIDE COURSES
+        // subMenus= document.getElementsByClassName('python-course')
+        for (i = 0; i < elem.courseListPython.length ;i++) {
+            elem.courseListPython[i].style.display='none';
+        }
+        elem.pythonArrow.style.transform='rotate(0deg)'
+        pythonDeploy=false;
+    } else {
+        // SHOW COURSES
+        // subMenus= document.getElementsByClassName('python-course')
+        for (i = 0; i < elem.courseListPython.length ;i++) {
+            elem.courseListPython[i].style.display='block';
+        }
+        elem.pythonArrow.style.transform='rotate(180deg)'
+        pythonDeploy=true;
+    }
+
+}
+
+const otherCollapse = () => {
+
+    if (otherDeploy) {
+        // HIDE COURSES
+        // subMenus= document.getElementsByClassName('other-course')
+        for (i = 0; i < elem.courseListOthers.length ;i++) {
+            elem.courseListOthers[i].style.display='none';
+        }
+        elem.otherArrow.style.transform='rotate(0deg)'
+        otherDeploy=false;
+    } else {
+        // SHOW COURSES
+        // subMenus= document.getElementsByClassName('other-course')
+        for (i = 0; i < elem.courseListOthers.length ;i++) {
+            elem.courseListOthers[i].style.display='block';
+        }
+        elem.otherArrow.style.transform='rotate(180deg)'
+        otherDeploy=true;
+    }
+
+}
+
+const hideMenu = () => {
+    if (elem.menuBtn.style.display != 'none' && innerWidth<1024)  {
+        if (menuDeploy) {
+            // Code to hide menu
+            for (i = 0; i < elem.subMenus.length ;i++) {
+                elem.subMenus[i].style.display='none';
+            }
+            elem.menuArrow.style.transform='rotate(0deg)'
+            menuDeploy=false;
+        } 
+    }
+}
+
+const clickMenuButton = () => {
+    if (elem.menuBtn.style.display != 'none' && innerWidth<1024) {
+        if (menuDeploy) {
+            // Code to hide menu
+            for (i = 0; i < subMenus.length ;i++) {
+                elem.subMenus[i].style.display='none';
+            }
+            elem.menuArrow.style.transform='rotate(0deg)'
+            menuDeploy=false;
+        } else {
+            // Code to show menu
+            for (i = 0; i < elem.subMenus.length ;i++) {
+                elem.subMenus[i].style.display='block';
+            }
+            elem.menuArrow.style.transform='rotate(180deg)'
+            menuDeploy=true;
         }
     }
 }
@@ -30,123 +151,16 @@ addEventListener("load", checkScreenWidth)
 
 addEventListener("resize", checkScreenWidth)
 
-function clickMenuButton () {
-    if (menuBtn.style.display != 'none' && innerWidth<1024) {
-        if (menuDeploy) {
-            // Code to hide menu
-            for (i = 0; i < subMenus.length ;i++) {
-                subMenus[i].style.display='none';
-            }
-            menuArrow.style.transform='rotate(0deg)'
-            menuDeploy=false;
-        } else {
-            // Code to show menu
-            for (i = 0; i < subMenus.length ;i++) {
-                subMenus[i].style.display='block';
-            }
-            menuArrow.style.transform='rotate(180deg)'
-            menuDeploy=true;
-        }
-    }
-}
+elem.menuBtnTrigger.addEventListener("click", clickMenuButton)
 
-function hideMenu() {
-    if (menuBtn.style.display != 'none' && innerWidth<1024)  {
-        if (menuDeploy) {
-            // Code to hide menu
-            for (i = 0; i < subMenus.length ;i++) {
-                subMenus[i].style.display='none';
-            }
-            menuArrow.style.transform='rotate(0deg)'
-            menuDeploy=false;
-        } 
-    }
-}
+elem.main[0].addEventListener("click", hideMenu)
 
-function htmlAndCssCollapse () {
+elem.footer[0].addEventListener("click", hideMenu)
 
-    if (htmlAndCssDeploy) {
-        // HIDE COURSES
-        subMenus= document.getElementsByClassName('html-css-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='none';
-        }
-        document.getElementById('html-css-arrow').style.transform='rotate(0deg)'
-        htmlAndCssDeploy=false;
-    } else {
-        // SHOW COURSES
-        subMenus= document.getElementsByClassName('html-css-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='block';
-        }
-        document.getElementById('html-css-arrow').style.transform='rotate(180deg)'
-        htmlAndCssDeploy=true;
-    }
+elem.htmlCssCourseList.addEventListener("click", htmlAndCssCollapse)
 
-}
+elem.jsCourseList.addEventListener("click", javascriptCollapse)
 
-function javascriptCollapse () {
+elem.pythonCourseList.addEventListener("click", pythonCollapse)
 
-    if (javascriptDeploy) {
-        // HIDE COURSES
-        subMenus= document.getElementsByClassName('js-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='none';
-        }
-        document.getElementById('js-arrow').style.transform='rotate(0deg)'
-        javascriptDeploy=false;
-    } else {
-        // SHOW COURSES
-        subMenus= document.getElementsByClassName('js-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='block';
-        }
-        document.getElementById('js-arrow').style.transform='rotate(180deg)'
-        javascriptDeploy=true;
-    }
-
-}
-
-function pythonCollapse () {
-
-    if (pythonDeploy) {
-        // HIDE COURSES
-        subMenus= document.getElementsByClassName('python-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='none';
-        }
-        document.getElementById('python-arrow').style.transform='rotate(0deg)'
-        pythonDeploy=false;
-    } else {
-        // SHOW COURSES
-        subMenus= document.getElementsByClassName('python-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='block';
-        }
-        document.getElementById('python-arrow').style.transform='rotate(180deg)'
-        pythonDeploy=true;
-    }
-
-}
-
-function otherCollapse () {
-
-    if (otherDeploy) {
-        // HIDE COURSES
-        subMenus= document.getElementsByClassName('other-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='none';
-        }
-        document.getElementById('other-arrow').style.transform='rotate(0deg)'
-        otherDeploy=false;
-    } else {
-        // SHOW COURSES
-        subMenus= document.getElementsByClassName('other-course')
-        for (i = 0; i < subMenus.length ;i++) {
-            subMenus[i].style.display='block';
-        }
-        document.getElementById('other-arrow').style.transform='rotate(180deg)'
-        otherDeploy=true;
-    }
-
-}
+elem.otherCourseList.addEventListener("click", otherCollapse)
