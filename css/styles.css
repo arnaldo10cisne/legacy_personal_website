@@ -14,9 +14,8 @@ header {
     flex-direction: column;
 
     /* DIMENSIONS */
-    /* height: calc(100vh - 49.6px); */
+    padding: 60px 0 20px 0;
     margin-bottom: -20px;
-    padding-bottom: 20px;
 
     /* COLORS AND OTHER STYLES */
     background-color: var(--blue-gray-transparent);
@@ -31,7 +30,7 @@ header {
     margin: 15px 0px 35px 0;
     
     /* COLORS AND OTHER STYLES */
-    /* background-color: var(--blue-gray); */
+
 }
 
 #web-banner--text {

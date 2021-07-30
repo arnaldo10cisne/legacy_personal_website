@@ -69,7 +69,7 @@ body {
     font-size: 1.6rem;
     min-width: 320px;
     min-height: 100vh;
-    padding-top: 60px;
+    
 
     background-color: var(--blue-gray);
     color: white;
