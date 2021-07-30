@@ -1,7 +1,3 @@
-export const header = document.getElementsByTagName('header')
-export const main = document.getElementsByTagName('main')
-export const footer = document.getElementsByTagName('footer')
-
 export const subMenus = document.getElementsByClassName('menu--item')
 export const menuArrow = document.getElementById('menu-arrow')
 export const menuBtn = document.getElementById("menu-button")
