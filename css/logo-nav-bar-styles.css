@@ -81,12 +81,12 @@
     transition-duration: 0.2s;
 }
 
-.menu--item:hover {
+.menu--not-current:hover {
     /* COLORS AND OTHER STYLES */
     border-left: var(--main-yellow) solid 5px;
 }
 
-#menu--current-page {
+.menu--current-page {
     /* COLORS AND OTHER STYLES */
     font-weight: bolder;
     border-left: var(--main-yellow) solid 20px;
@@ -100,6 +100,7 @@
 /******************************************************/
 /* MEDIA QUERIES */
 /******************************************************/
+
 
 
 
@@ -138,7 +139,7 @@
         padding: 20px 5vw 20px 20px;
     }
 
-    .menu--item:hover {
+    .menu--not-current:hover {
         /* COLORS AND OTHER STYLES */
         padding-right: calc(5vw - 4px);
     }
