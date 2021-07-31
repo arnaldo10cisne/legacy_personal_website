@@ -3,11 +3,12 @@
 footer {
     /* DISPLAY AND POSITION */
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
         
     /* DIMENSIONS */
-    height: 100px;
+    height: 80px;
     margin-top: 20px;
     
     /* COLORS AND OTHER STYLES */
@@ -15,31 +16,25 @@ footer {
     font-weight: bold;
     color: var(--blue-gray);
     font-family: var(--main-font);
+    border: var(--blue-gray) solid 10px;
 }
 
-#footer--social-media-section {
+footer div {
     /* DISPLAY AND POSITION */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* COLORS AND OTHER STYLES */
-    color: inherit;
 }
 
-#footer--logo-contact-section a {
-    /* DISPLAY AND POSITION */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* COLORS AND OTHER STYLES */
+footer span {
+    text-align: center;
+    align-self: center;
+    font-family: var(--content-font);
+    font-size: 1.4rem;
     color: var(--blue-gray);
-    font-weight: bolder;
-    font-size: 1.2rem;
 }
 
-
+footer div span:first-child {
+    font-size: 2rem;
+}
 
 
 
@@ -55,34 +50,6 @@ footer {
 /* TABLET */
 @media (min-width: 760px) {
     footer {
-        justify-content: center;
-        height: 80px;
-    }
-    
-    #footer--social-media-section {
-        margin-right: 50px;
         flex-direction: row;
-    }
-
-    #footer--social-media-section p {
-        margin-right: 20px;
-    }
-
-    #footer--social-media-section div a {
-        margin: auto 5px;
-    }
-
-    #footer--logo-contact-section {
-        margin-left: 50px;
-        flex-direction: row;
-    }
-
-    #footer--logo-contact-section a {
-        flex-direction: row;
-    }
-
-    #footer--logo-contact-section a p {
-        font-size: 1.6rem;
-        margin-left: 10px;
     }
 }
