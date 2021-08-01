@@ -1,6 +1,10 @@
 /* MAIN STYLES */
 
 main {
+    padding-top: 60px;
+}
+
+.grid-container {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
@@ -8,19 +12,19 @@ main {
     flex-grow: 1;
 
     /* DIMENSIONS */
-    padding-top: 60px;
+    /* padding-top: 25px; */
     width: 100%;
 
     /* COLORS AND OTHER STYLES */
 }
 
-main h1 {
+.grid-container > h1 {
     /* DISPLAY AND POSITION */
     align-self: center;
     justify-self: center;
 
     /* DIMENSIONS */
-    margin: 25px 0px 8px 0;
+    margin: 25px 0px 0px 0;
 
     /* COLORS AND OTHER STYLES */
     font-size: 30vw;
@@ -28,7 +32,7 @@ main h1 {
     font-family: var(--title-font);
 }
 
-main h2 {
+.grid-container > h2 {
     /* DISPLAY AND POSITION */
     align-self: center;
     text-align: center;
@@ -44,7 +48,7 @@ main h2 {
     font-weight: 400;
 }
 
- main p {
+.description {
     /* DISPLAY AND POSITION */
     text-align: left;
 
@@ -57,7 +61,7 @@ main h2 {
     font-family: var(--content-font);
 }
 
-main section {
+.grid-container > section {
     /* DISPLAY AND POSITION */
     display:flex;
     flex-direction: column;
@@ -68,9 +72,6 @@ main section {
     /* COLORS AND OTHER STYLES */
     
 }
-
-
-
 
 #certificates-section {
     /* DISPLAY AND POSITION */
@@ -112,7 +113,7 @@ width: 100vw;
 /* COLORS AND OTHER STYLES */
 }
 
-.certificate a {
+.certificate > a {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
@@ -123,13 +124,13 @@ width: 100vw;
     /* COLORS AND OTHER STYLES */
 }
 
-.certificate a img {
+.certificate > a > img {
     border: 6px solid var(--blue-gray);
     border-radius: 100px;
     transition-property: border;
     transition-duration: 0.2s;
 }
-.certificate a img:hover {
+.certificate > a > img:hover {
    border: 6px solid var(--main-yellow);
 }
 
@@ -163,11 +164,11 @@ width: 100vw;
 
 /* TABLET */
 @media (min-width: 760px) {
-    main h1 {
+    .grid-container h1 {
         font-size: 15vw;
     }
 
-    main p {
+    .description {
         width: 70%;
     }
 
@@ -188,28 +189,29 @@ width: 100vw;
 /* DESKTOP */
 @media (min-width: 1024px) {
 
-    main {
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
     }
 
-    main h1 {
+    .grid-container h1 {
         grid-column: 1/4;
         font-size: 10vw;
     }
 
-    main h2 {
+    .grid-container > h2 {
         text-align: center;
         justify-self: center;
-        width: 90%;
+        width: 100%;
     }
 
-    main p {
-        align-self: flex-start;
+    .description {
+        text-align: justify;
+        align-self: center;
         justify-self: center;
-        width: 90%;
+        width: 70%;
         font-size: 2rem;
     }
 
@@ -230,13 +232,14 @@ width: 100vw;
 
     #h2-education{
         margin-top: 40px;
-        width: 50%;
+        width: 33;
         grid-row: 4/5;
         grid-column: 1/4;
     }
 
     #p-education {
-        width: 50%;
+        justify-self: center;
+        width: 33%;
         grid-column: 1/4;
     }
 
@@ -253,8 +256,8 @@ width: 100vw;
     }
 
     .certificate {
-        min-width: 33.33vw;
-        max-width: 33.33vw;
+        min-width: 33.33%;
+        max-width: 33.33%;
     }
 
 }
@@ -262,26 +265,16 @@ width: 100vw;
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
 
-    main {
-        align-self: center;
-        width: 75%;
-    }
-
-    main p {
-        font-size: 1.8rem;
-    }
-
-    #h2-education {
-        width: 30%;
+    .grid-container h1 {
+        font-size: 5.5vw;
     }
 
     #p-education {
-        width: 30%;
+        width: 25%; 
     }
 
     .certificate {
-        min-width: 24vw;
-        max-width: 24vw;
+        min-width: 25%;
+        max-width: 25%;
     }
-
 }

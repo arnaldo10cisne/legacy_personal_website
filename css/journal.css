@@ -29,7 +29,7 @@ main h1 {
     font-family: var(--title-font);
 }
 
-main div {
+.articles_container {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;

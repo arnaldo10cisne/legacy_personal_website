@@ -16,6 +16,11 @@
     --blue-gray: #212136;
     --blue-gray-darker: #1a1a2e;
     --blue-gray-transparent: #212136f1; 
+
+    --navigation-timeline-level-1: #bda913;
+    --navigation-timeline-level-2: #8d7e0e;
+    --navigation-timeline-level-3: #665b0a;
+    --navigation-timeline-level-3: #4b4307;
 }
 
 /* BASE STYLES */
@@ -85,12 +90,84 @@ a {
     color: white;
 }
 
-.in-text-link {
-    text-decoration: underline;
-    color: rgb(96, 172, 202);
+/* CLASSES */
+
+.navigation_timeline {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
 }
 
-/* CLASSES */
+.navigation_timeline__level {
+  padding: 3px 15px;
+  font-family: var(--content-font);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition-property: border padding-left;
+  transition-duration: 0.1s;
+  border: var(--main-yellow) solid 2px;
+}
+
+.navigation_timeline__level:hover {
+  border: white solid 2px;
+  padding-left: 20px;
+}
+
+.navigation--level_1 {
+  background-color:var(--navigation-timeline-level-1);
+  padding-left: 10px;
+  z-index: 3;
+}
+
+.navigation--level_2 {
+  margin-left: -13px;
+  background-color:var(--navigation-timeline-level-2);
+  z-index: 2;
+}
+
+.navigation--level_3 {
+  margin-left: -13px;
+  background-color:var(--navigation-timeline-level-3);
+  z-index: 1;
+}
+
+.navigation--level_4 {
+  margin-left: -13px;
+  background-color:var(--navigation-timeline-level-3);
+  z-index: 0;
+}
+
+.navigation--current_level {
+  background-color: var(--blue-gray-darker);
+  border: var(--blue-gray-darker) solid 2px;
+}
+
+.navigation--current_level:hover {
+  border: var(--blue-gray-darker) solid 2px;
+  padding-left: 15px;
+}
+
+.in-text-link {
+  text-decoration: underline;
+  color: rgb(96, 172, 202);
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
+.in-text-link:hover {
+  color: var(--main-yellow);
+}
+
+.big-link {
+  color: var(--main-yellow);
+  transition-property: color;
+  transition-duration: 0.3s; 
+}
+
+.big-link:hover {
+  color: var(--main-yellow-darker); 
+}
 
 .title {
   /* DISPLAY AND POSITION */
@@ -103,6 +180,10 @@ a {
   font-size: 23vw;
   color: var(--main-yellow);
   font-family: var(--title-font);
+}
+
+.title--smaller {
+  font-size: 17vw;
 }
 
 .section-divider {
