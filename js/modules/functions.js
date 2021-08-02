@@ -29,7 +29,6 @@ export const htmlAndCssCollapse = () => {
 
     if (htmlAndCssDeploy) {
         // HIDE COURSES
-        // subMenus= document.getElementsByClassName('html-css-course')
         for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
             elem.courseListHtmlAndCss[i].style.display='none';
         }
@@ -37,7 +36,6 @@ export const htmlAndCssCollapse = () => {
         htmlAndCssDeploy=false;
     } else {
         // SHOW COURSES
-        // subMenus= document.getElementsByClassName('html-css-course')
         for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
             elem.courseListHtmlAndCss[i].style.display='block';
         }
@@ -51,7 +49,6 @@ export const javascriptCollapse = () => {
 
     if (javascriptDeploy) {
         // HIDE COURSES
-        // subMenus= document.getElementsByClassName('js-course')
         for (i = 0; i < elem.courseListJs.length ;i++) {
             elem.courseListJs[i].style.display='none';
             // subMenus[i].style.display='none';
@@ -60,7 +57,6 @@ export const javascriptCollapse = () => {
         javascriptDeploy=false;
     } else {
         // SHOW COURSES
-        // subMenus= document.getElementsByClassName('js-course')
         for (i = 0; i < elem.courseListJs.length ;i++) {
             elem.courseListJs[i].style.display='block';
         }
@@ -74,7 +70,6 @@ export const pythonCollapse = () => {
 
     if (pythonDeploy) {
         // HIDE COURSES
-        // subMenus= document.getElementsByClassName('python-course')
         for (i = 0; i < elem.courseListPython.length ;i++) {
             elem.courseListPython[i].style.display='none';
         }
@@ -82,7 +77,6 @@ export const pythonCollapse = () => {
         pythonDeploy=false;
     } else {
         // SHOW COURSES
-        // subMenus= document.getElementsByClassName('python-course')
         for (i = 0; i < elem.courseListPython.length ;i++) {
             elem.courseListPython[i].style.display='block';
         }
@@ -115,7 +109,6 @@ export const otherCollapse = () => {
 }
 
 export const hideMenu = () => {
-    console.log('Hiding menu')
     if (elem.menuBtn.style.display != 'none' && innerWidth<1024)  {
         if (menuDeploy) {
             // Code to hide menu
