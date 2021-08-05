@@ -140,3 +140,15 @@ export const clickMenuButton = () => {
         }
     }
 }
+
+export const formatEmailMessage = msg => {
+    let finalMsg = ""
+    for (let letter of msg) {
+        if (letter!=" ") {
+            finalMsg = finalMsg + letter
+        } else {
+            finalMsg = finalMsg + '%20'
+        }
+    }
+    return finalMsg
+}

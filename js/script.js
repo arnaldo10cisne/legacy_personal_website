@@ -24,3 +24,14 @@ if (location.pathname=="/html/certificates.html") {
     elem.pythonCourseList.addEventListener("click", func.pythonCollapse)
     elem.otherCourseList.addEventListener("click", func.otherCollapse)
 }
+
+// EVENT LISTENERS FOR 'contact.html'
+if (location.pathname=="/html/contact.html") {
+    elem.btnSendEmail.addEventListener("click", ()=>{
+        let name = document.getElementById('name-input').value
+        let message = document.getElementById('message-input').value
+        console.log(name)
+        console.log(message)
+        window.location.href = `mailto:arnaldo10cisne@gmail.com?subject=${name}&body=${func.formatEmailMessage(message)}`;
+    })
+}

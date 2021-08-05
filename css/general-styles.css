@@ -218,8 +218,9 @@ a {
   border-radius: 5px;
   color: var(--blue-gray);
   font-weight: 500;
+  font-size: 1.6rem;
   transition-property: background-color;
-    transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .button:hover {

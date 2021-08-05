@@ -2,6 +2,7 @@ export const subMenus = document.getElementsByClassName('menu--item')
 export const menuArrow = document.getElementById('menu-arrow')
 export const menuBtn = document.getElementById("menu-button")
 export const menuBtnTrigger = document.getElementById("menu-button-trigger")
+export const btnSendEmail = document.getElementById('btnSendEmail')
 
 export const htmlCssCourseList = document.getElementById('html-css-list')
 export const jsCourseList = document.getElementById('js-list')

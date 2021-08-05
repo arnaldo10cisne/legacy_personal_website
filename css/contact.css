@@ -1,6 +1,6 @@
 input {
     font-family: var(--main-font);
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     font-size: 1.2rem;
     padding: 0px 15px;
@@ -9,7 +9,7 @@ input {
 
 textarea {
     font-family: var(--main-font);
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     font-size: 1.2rem;
     padding: 5px 15px;
@@ -118,21 +118,8 @@ main h3{
     height: 85px;
 }
 
-main button {
-    /* DISPLAY AND POSITION */
-    text-align: center;
-
-    /* DIMENSIONS */
-    margin-top: 20px;
-    padding: 10px 25px;
-
-    /* COLORS AND OTHER STYLES */
-    border-radius: 15px;
-    font-weight: 700;
-    background-color: var(--main-yellow);
-    font-size: 2rem;
-    font-family: var(--main-font);
-    color: var(--blue-gray);
+main > button {
+    border: none;
 }
 
 
