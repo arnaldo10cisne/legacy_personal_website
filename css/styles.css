@@ -283,7 +283,7 @@ main h3 {
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     #header--web-banner{
         width: 70%;
         align-self: center;

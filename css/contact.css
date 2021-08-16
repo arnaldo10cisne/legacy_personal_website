@@ -137,7 +137,7 @@ main > button {
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     textarea,input {
         font-size: 1.6rem;
     }

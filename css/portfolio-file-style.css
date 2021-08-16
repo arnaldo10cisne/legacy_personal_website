@@ -48,57 +48,7 @@ main h1 {
     
 }
 
-#general-info-grid {
-    /* DISPLAY AND POSITION */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-
-    /* DIMENSIONS */
-    width: 90%;
-
-    /* COLORS AND OTHER STYLES */
-    
-}
-
-.type-column {
-    /* DISPLAY AND POSITION */
-    justify-self: center;
-
-    /* DIMENSIONS */
-
-    /* COLORS AND OTHER STYLES */
-    font-weight: 700;
-    color: var(--main-yellow);
-    border-bottom: 1px solid var(--main-yellow);
-}
-
-.content-column {
-    /* DISPLAY AND POSITION */
-    justify-self: center;
-    text-align: center;
-
-    /* DIMENSIONS */
-    grid-column: 2/4;
-
-    /* COLORS AND OTHER STYLES */
-    border-bottom: 1px solid var(--main-yellow);
-}
-
-main section h2 {
-    /* DISPLAY AND POSITION */
-
-    /* DIMENSIONS */
-    margin: 10px 0px;
-    padding: 0 10px;
-
-    /* COLORS AND OTHER STYLES */
-    color: var(--blue-gray);
-    background-color: var(--main-yellow);
-    font-family: var(--main-font);
-}
-
-main section p {
+.portfolio__about_section__text {
     /* DISPLAY AND POSITION */
     text-align: justify;
 
@@ -156,7 +106,7 @@ main section p {
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     main h1 {
         font-size: 7vw;
         width: 90%;
@@ -165,6 +115,17 @@ main section p {
     #project-img {
         max-width: 50vw;
         height: 50vw;
+    }
+
+    .general-info-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+
+    .portfolio__about_section__text {
+        
+        width: 70%;
+        
     }
 }
 
@@ -180,7 +141,7 @@ main section p {
         height: 24vw;
     }
 
-    #general-info-grid {
+    .general-info-grid {
         grid-template-columns: 1fr 1fr;
         width: 40%;
     }
@@ -192,6 +153,12 @@ main section p {
 
     .type-column {
         width: 100%;
+    }
+
+    .portfolio__about_section__text {
+        
+        width: 40%;
+        
     }
 
     main section p {

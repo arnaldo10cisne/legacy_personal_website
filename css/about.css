@@ -163,7 +163,7 @@ width: 100vw;
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     .grid-container h1 {
         font-size: 15vw;
     }

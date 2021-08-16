@@ -100,13 +100,9 @@ h2 {
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     main h1 {
         font-size: 15vw;
-    }
-
-    .portfolio-rail {
-        justify-content: center;
     }
 
     .portfolio-item {

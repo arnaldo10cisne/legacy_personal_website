@@ -61,7 +61,7 @@ footer {
 
 
 /* TABLET */
-@media (min-width: 760px) {
+@media (min-width: 450px) {
     footer {
         flex-direction: row;
         justify-content: space-around;

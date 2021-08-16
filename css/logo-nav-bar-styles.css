@@ -10,6 +10,7 @@
 
     /* DIMENSIONS */
     width: 100%;
+    max-width: 100vw;
 
     /* COLORS AND OTHER STYLES */
     background-color: var(--blue-gray);
