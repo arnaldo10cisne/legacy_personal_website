@@ -28,10 +28,33 @@ if (location.pathname=="/html/certificates.html") {
 // EVENT LISTENERS FOR 'contact.html'
 if (location.pathname=="/html/contact.html") {
     elem.btnSendEmail.addEventListener("click", ()=>{
-        let name = document.getElementById('name-input').value
-        let message = document.getElementById('message-input').value
-        console.log(name)
-        console.log(message)
-        window.location.href = `mailto:arnaldo10cisne@gmail.com?subject=${name}&body=${func.formatEmailMessage(message)}`;
+
+        let tempParams = {
+            from_name: document.getElementById('name-input').value,
+            to_name: 'Arnaldo',
+            message: document.getElementById('message-input').value,
+        };
+        let sentStatus = null
+
+        emailjs.send('service_c5sznik','template_jwv5qsi', tempParams)
+        .then(function(res){
+            sentStatus = res.status
+            console.log('Email response: ', res.status)
+            setTimeout(() => {
+                
+                if (sentStatus == 200) {
+                    alert('Email sent successfully!')
+                } else {
+                    alert('There was an issue sending the email, try again later')
+                }
+
+                document.getElementById('name-input').value = ""
+                document.getElementById('message-input').value = ""
+
+            }, 0);
+        })
+
+        
+
     })
 }
