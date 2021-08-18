@@ -23,21 +23,6 @@ main section {
     /* COLORS AND OTHER STYLES */
 }
 
-main h1 {
-    /* DISPLAY AND POSITION */
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-
-    /* DIMENSIONS */
-    margin: 15px 0px 8px 0;
-
-    /* COLORS AND OTHER STYLES */
-    font-size: 10vw;
-    color: var(--main-yellow);
-    font-family: var(--main-font);
-}
-
 #project-img {
     /* DISPLAY AND POSITION */
 
@@ -50,7 +35,6 @@ main h1 {
 
 .portfolio__about_section__text {
     /* DISPLAY AND POSITION */
-    text-align: justify;
 
     /* DIMENSIONS */
     width: 90%;
@@ -132,33 +116,58 @@ main h1 {
 /* DESKTOP */
 @media (min-width: 1024px) {
 
-    main h1 {
-        font-size: 5.5vw;
+    #general_info_section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .title--b {
+        width: 50%;
+        padding: 0 15px;
     }
 
     #project-img {
         max-width: 25vw;
         height: 24vw;
+        margin: 20px auto 10px auto;
     }
 
-    .general-info-grid {
+    #about_section {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 40%;
     }
 
-    .content-column {
-        width: 100%;
-        text-align: start;
-    }
-
-    .type-column {
-        width: 100%;
+    .section-divider{
+        grid-column: 1/3;
     }
 
     .portfolio__about_section__text {
         
-        width: 40%;
+        text-align: justify;
+        width: 60%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: auto;
+        margin-right: auto;
         
+    }
+
+    .general-info-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        grid-column: 2/3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .type-column {
+        width: 100%;
     }
 
     main section p {
@@ -174,8 +183,15 @@ main h1 {
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
 
-    main h1 {
-        font-size: 4vw;
+
+    .portfolio__about_section__text {
+        width: 80%;
     }
+
+    .general-info-grid {
+        width: 60%;
+    }
+
+
  
  }

@@ -16,22 +16,6 @@ main {
     /* COLORS AND OTHER STYLES */
 }
 
-.grid_container h1 {
-    /* DISPLAY AND POSITION */
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-
-    /* DIMENSIONS */
-    width: 95%;
-    margin: 20px 0px 8px 0px;
-
-    /* COLORS AND OTHER STYLES */
-    font-size: 8vw;
-    color: var(--main-yellow);
-    font-family: var(--main-font);
-}
-
 .grid_container > a img {
     border: 6px solid var(--blue-gray);
     border-radius: 100px;
@@ -72,7 +56,7 @@ main {
 
 }
 
-/* TABLET */
+/* DESKTOP */
 @media (min-width: 1024px) {
     .grid_container {
         display: grid;
@@ -104,7 +88,6 @@ main {
         grid-column: 1/3;
         align-self: center;
         justify-self: center;
-        max-width: 50%;
     }
     
     .type-column, .content-column {

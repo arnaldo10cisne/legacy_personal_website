@@ -188,6 +188,17 @@ a {
   font-size: 17vw;
 }
 
+.title--b {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 95%;
+  margin: 20px 0px 8px 0px;
+  font-size: 8vw;
+  color: var(--main-yellow);
+  font-family: var(--main-font);
+}
+
 .section-divider {
   /* DISPLAY AND POSITION */
   align-self: center;
@@ -207,6 +218,7 @@ a {
 
 .button {
   /* DISPLAY AND POSITION */
+  text-align: center;
   align-self: center;
   justify-self: center;
 
@@ -238,6 +250,7 @@ a {
 
   /* DIMENSIONS */
   width: 90%;
+  margin-bottom: 20px;
 
   /* COLORS AND OTHER STYLES */
   
@@ -307,7 +320,11 @@ a {
 @media (min-width: 450px) {
   .navigation_timeline {
     padding: 30px 0;
-}
+  }
+  .general-info-grid {
+    width: 70%;
+  }
+  
 }
 
 /* DESKTOP */
@@ -318,6 +335,9 @@ a {
   }
   .button--grid {
     grid-column: 1/3;
+  }
+  .title--b {
+    font-size: 4vw;
   }
 }
 
