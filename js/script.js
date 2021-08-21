@@ -27,44 +27,104 @@ if (location.pathname=="/html/certificates.html") {
 
 // EVENT LISTENERS FOR 'contact.html'
 if (location.pathname=="/html/contact.html") {
+    
+    const body = document.getElementById('body')
+    const modalError = document.getElementById('modalError')
+    const modalConfirmation = document.getElementById('modalConfirmation')
+    const modalSuccess = document.getElementById('modalSuccess')
+    const errorModalDescription = document.getElementById('errorModalDescription')
+    const contactReasonModal = document.getElementById('contactReasonModal')
+    const modalContinue = document.getElementById('modalContinue')
+    const modal_back_button = document.getElementsByClassName('modal_back_button')
+
+    let reasonValue
+    let sentStatus = null
+    let tempParams
+    
+    const sendEmail = function() {
+        console.log('Voy a enviar un correo WUJUUUUU')
+            emailjs.send('service_c5sznik','template_jwv5qsi', tempParams)
+            .then(function(res){
+                sentStatus = res.status
+                console.log('Email status: ', res.status)
+                setTimeout(() => {
+                    
+                    if (sentStatus == 200) {
+                        body.style.overflow = 'hidden'
+                        modalSuccess.style.display = 'flex'
+                    } else {
+                        errorModalDescription.innerHTML = 'An unexpected problem occurred. Please try again later'
+                        body.style.overflow = 'hidden'
+                        modalError.style.display = 'flex'
+                    }
+
+                    document.getElementById('name-input').value = ""
+                    document.getElementById('message-input').value = ""
+                    document.getElementById('reply-input').value = ""
+                    document.getElementById('radioOpt1').checked = true
+
+                }, 0);
+            })
+    }
+
+    modal_back_button.forEach(e => {
+        e.addEventListener("click", ()=>{
+            modalSuccess.style.display = 'none'
+            modalConfirmation.style.display = 'none'
+            modalError.style.display = 'none'
+            body.style.overflow = 'visible'
+        })
+    });
+
+    modalContinue.addEventListener("click", ()=>{
+        modalConfirmation.style.display = 'none'
+        sendEmail()
+    })
+    
     elem.btnSendEmail.addEventListener("click", ()=>{
-        let reasonValue
-        if (document.getElementById('radioOpt1').checked) {
-            reasonValue = 'Greeting'
-        } else if (document.getElementById('radioOpt2').checked) {
-            reasonValue = 'Question'
-        } else if (document.getElementById('radioOpt3').checked) {
-            reasonValue = 'Job offer'
+        
+        let validInfo = false
+
+        //Asign email parameters
+        {
+            if (document.getElementById('radioOpt1').checked) {
+                reasonValue = 'Greeting'
+            } else if (document.getElementById('radioOpt2').checked) {
+                reasonValue = 'Question'
+            } else if (document.getElementById('radioOpt3').checked) {
+                reasonValue = 'Job offer'
+            }
+    
+            tempParams = {
+                from_name: document.getElementById('name-input').value,
+                message: document.getElementById('message-input').value,
+                reply_to: document.getElementById('reply-input').value,
+                reason: reasonValue,
+            };
         }
 
-        let tempParams = {
-            from_name: document.getElementById('name-input').value,
-            message: document.getElementById('message-input').value,
-            reply_to: document.getElementById('reply-input').value,
-            reason: reasonValue,
-        };
-        let sentStatus = null
-
-        emailjs.send('service_c5sznik','template_jwv5qsi', tempParams)
-        .then(function(res){
-            sentStatus = res.status
-            console.log('Email status: ', res.status)
-            setTimeout(() => {
-                
-                if (sentStatus == 200) {
-                    alert('Email sent successfully!')
+        if (document.getElementById('name-input').value.trim() == "" || document.getElementById('message-input').value.trim() == "") {
+            errorModalDescription.innerHTML = 'Please enter both a name and a message'
+            body.style.overflow = 'hidden'
+            modalError.style.display = 'flex'
+        } else {
+            if (document.getElementById('radioOpt2').checked || document.getElementById('radioOpt3').checked) {
+                if (document.getElementById('reply-input').value.trim() == "") {
+                    if (document.getElementById('radioOpt2').checked) contactReasonModal.innerHTML = "question"
+                    if (document.getElementById('radioOpt3').checked) contactReasonModal.innerHTML = "job offer"
+                    body.style.overflow = 'hidden'
+                    modalConfirmation.style.display = 'flex'
                 } else {
-                    alert('There was an issue sending the email, try again later')
+                    validInfo = true
                 }
+            } else {
+                validInfo = true
+            }
+        }
 
-                document.getElementById('name-input').value = ""
-                document.getElementById('message-input').value = ""
-                document.getElementById('reply-input').value = ""
-                document.getElementById('radioOpt1').checked = true
-
-            }, 0);
-        })
-
+        if (validInfo) {
+            sendEmail()
+        }
         
 
     })

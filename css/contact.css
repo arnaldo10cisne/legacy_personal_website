@@ -31,6 +31,9 @@ input[type="radio"]:checked + * {
     color: var(--main-yellow);
 }
 
+
+
+
 /* MAIN STYLES */
 
 main {
@@ -122,6 +125,104 @@ main {
     margin-bottom: -10px;
 }
 
+/* MODALS */
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    font-family: var(--main-font);
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+
+.modal_back_button {
+    background-color: transparent;
+    font-family: var(--content-font);
+    border: none;
+    border: black solid 1px ;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition-property: color, background-color, border;
+    transition-duration: 0.1s;
+    font-weight: 600;
+}
+
+.modal_back_button:hover {
+  color: white;
+  background-color: var(--blue-gray-darker);
+  border: var(--blue-gray-darker) solid 1px;
+}
+
+.modal_continue_button {
+    background-color: transparent;
+    font-family: var(--content-font);
+    border: none;
+    border: black solid 1px ;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition-property: color, background-color, border;
+    transition-duration: 0.1s;
+    font-weight: 600;
+}
+
+.modal_continue_button:hover {
+  color: var(--navigation-timeline-level-1);
+  background-color: var(--navigation-timeline-level-3);
+  border: var(--navigation-timeline-level-3) solid 1px ;
+}
+
+.modal_image--success {
+    margin: 10px 0;
+    width: 100px;
+    height: 50px;
+    background-image: url('../assets/img/logo_small_icon_only_inverted(2).png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.modal_title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.modal_description {
+    margin: 15px 0;
+}
+
+#modalError {
+    display: none;
+}
+
+#modalConfirmation {
+    display: none;
+}
+
+#modalSuccess {
+    display: none;
+}
+
+
+
 
 
 
@@ -156,6 +257,9 @@ main {
     .contact_title {
         font-size: 1.6rem;
     }
+    .modal__container {
+        width: 70%;
+    }
 
 }
 
@@ -186,6 +290,9 @@ main {
         height: 150px;
         font-size: 2rem;
     }
+    .modal__container {
+        width: 50%;
+    }
 
 }
 
@@ -194,6 +301,9 @@ main {
 
     #form_container {
         width: 50%;
+    }
+    .modal__container {
+        width: 30%;
     }
 
 }
