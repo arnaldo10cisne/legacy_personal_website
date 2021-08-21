@@ -30,8 +30,6 @@
 </head>
 <body>
 
-    <header></header>
-
     <!-- LOGO AND NAVIGATION BAR -->
     <div id="header--logo-nav-bar">
         
@@ -79,14 +77,42 @@
 
         <h1 class="title">Contact</h1>
         <h2 class="section-divider">Get in touch with Arnaldo</h2>
-        <p>Get in touch with questions, comments, or work inquiries.</p>
-        <div id="grid-container">
-            <h3 id="name-h3">YOUR NAME</h3>
-            <input id="name-input" type="text">
-            <!-- <h3 id="email-h3">SUBJECT</h3> -->
-            <!-- <input id="email-input" type="email"> -->
-            <h3 id="message-h3">YOUR MESSAGE</h3>
-            <textarea id="message-input" placeholder="Say hi!"></textarea>
+        <p id="instructions">Reach me with questions, work inquiries, or just to say hi!</p>
+        <div id="form_container">
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="name-h3">Your name:</h3>
+                <input class="input_text" id="name-input" type="text">
+            </div>
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="name-h3">Reason for contact:</h3>
+                <div class="radio_container">
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt1" name="reason" value="Opt1" checked>
+                        <label class="radio_label" for="radioOpt1">Say hi!</label>
+                    </div>
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt2" name="reason" value="Opt2">
+                        <label class="radio_label" for="radioOpt2">Ask question</label>
+                    </div>
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt3" name="reason" value="Opt3">
+                        <label class="radio_label" for="radioOpt3">Job offer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_container__input">
+                <h3 class="contact_title" id="message-h3">Your message:</h3>
+                <textarea class="input_text" id="message-input"></textarea>
+            </div>
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="reply-h3">Reply email:</h3>
+                <input class="input_text" id="reply-input" type="email">
+            </div>
+
         </div>
         <button id="btnSendEmail" class="button">Send message</button>
     </main>

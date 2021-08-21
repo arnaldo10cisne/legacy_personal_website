@@ -1,21 +1,35 @@
-input {
-    font-family: var(--main-font);
-    border-radius: 5px;
-    border: none;
-    font-size: 1.2rem;
-    padding: 0px 15px;
-    outline: none;
+/* MODIFYNG RADIO BUTTONS */
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
 }
 
-textarea {
-    font-family: var(--main-font);
-    border-radius: 5px;
-    border: none;
-    font-size: 1.2rem;
-    padding: 5px 15px;
-    outline: none;
+input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: center;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
 }
 
+input[type="radio"]:hover + *::before {
+    background: radial-gradient(var(--main-yellow-darker) 0%, var(--main-yellow-darker) 40%, transparent 50%, transparent);
+    border-color: var(--main-yellow-darker);
+}
+
+input[type="radio"]:checked + *::before {
+    background: radial-gradient(var(--main-yellow) 0%, var(--main-yellow) 40%, transparent 50%, transparent);
+    border-color: var(--main-yellow);
+}
+input[type="radio"]:checked + * {
+    color: var(--main-yellow);
+}
 
 /* MAIN STYLES */
 
@@ -35,62 +49,34 @@ main {
     /* COLORS AND OTHER STYLES */
 }
 
-main h1 {
+#instructions {
     /* DISPLAY AND POSITION */
     align-self: center;
 
     /* DIMENSIONS */
-    margin: 25px 0px 0px 0;
-
-    /* COLORS AND OTHER STYLES */
-    font-size: 23vw;
-    color: var(--main-yellow);
-    font-family: var(--title-font);
-}
-
-main h2 {
-    /* DISPLAY AND POSITION */
-    align-self: center;
-    text-align: center;
-
-    /* DIMENSIONS */
-    width: 100%;
-    padding: 5px 0;
+    width: 90%;
     margin: 10px 0 10px 0;
 
     /* COLORS AND OTHER STYLES */
-    background-color: var(--main-yellow);
-    color: var(--blue-gray);
     font-family: var(--main-font);
 }
 
-main p {
+#form_container {
     /* DISPLAY AND POSITION */
-    align-self: center;
-
-    /* DIMENSIONS */
-    width: 90%;
-    margin: 10px 0 20px 0;
-
-    /* COLORS AND OTHER STYLES */
-    font-family: var(--main-font);
-}
-
-#grid-container {
-    /* DISPLAY AND POSITION */
-    display: grid;
-    align-self: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
 
     /* DIMENSIONS */
     width: 90%;
 }
 
-main h3{
+.form_container__input {
+    padding: 10px 0px;
+}
+
+.contact_title {
     /* DISPLAY AND POSITION */
-    text-align: center;
+    text-align: left;
 
     /* DIMENSIONS */
 
@@ -100,29 +86,41 @@ main h3{
     color: var(--main-yellow);
 }
 
-#name-input {
-    grid-column: 2/4;
+.input_text {
+    width: 100%;
+    margin-top: 5px;
+    font-family: var(--main-font);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    outline: none;
 }
 
-#email-input {
-    grid-column: 2/4;
+.radio_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
-#message-h3 {
-    grid-column: 1/4;
+.radio_label {
+    user-select: none;
 }
 
 #message-input {
-    grid-column: 1/4;
-
+    resize: none;
     height: 85px;
-}
-
-main > button {
+    font-family: var(--main-font);
+    border-radius: 5px;
     border: none;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    outline: none;
 }
 
-
+#btnSendEmail {
+    margin-bottom: -10px;
+}
 
 
 
@@ -138,28 +136,25 @@ main > button {
 
 /* TABLET */
 @media (min-width: 450px) {
-    textarea,input {
+    .input_text {
         font-size: 1.6rem;
     }
-    
-    main h1 {
-        font-size: 15vw;
+
+    #instructions {
+        text-align: center;
     }
 
-    #message-h3 {
-        margin-top: 20px;
-    }
-
-    #grid-container {
-        margin-top: 20px;
+    #form_container {
+        
         width: 70%;
     }
 
     #message-input {
-        height: 200px;
+        height: 150px;
+        font-size: 1.6rem;
     }
-    main h3 {
-        font-size: 1.5rem;
+    .contact_title {
+        font-size: 1.6rem;
     }
 
 }
@@ -167,39 +162,37 @@ main > button {
 /* DESKTOP */
 @media (min-width: 1024px) {
 
-    textarea,input {
-        font-size: 2rem;
-    }
-    
-    main h1 {
-        font-size: 10vw;
-        width: 90%;
-    }
-
-    #grid-container {
-        width: 60%;
-    }
-
-    #grid-container > h3 {
+    .input_text {
         font-size: 2.2rem;
     }
 
-    #message-input {
-        height: 300px;
+    #form-container {
+        width: 60%;
     }
 
-    
+    .contact_title {
+        font-size: 2.2rem;
+    }
+
+    .radio_container {
+        justify-content: flex-start;
+    }
+
+    .radio_button {
+        margin-right: 20px;
+    }
+
+    #message-input {
+        height: 150px;
+        font-size: 2rem;
+    }
 
 }
 
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
 
-    main h1 {
-        font-size: 5.5vw;
-    }
-
-    #grid-container {
+    #form_container {
         width: 50%;
     }
 
