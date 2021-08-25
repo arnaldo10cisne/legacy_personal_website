@@ -33,6 +33,38 @@
 
     <header></header>
 
+    <!-- MODALS -->
+    <div>
+        <!-- ERROR MODAL -->
+        <div id="modalError" class="modal">
+            <div class="modal__container">
+                <p id="errorModalDescription" class="modal_description">Please enter a name and a message</p>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+
+        <!-- NON REPLY EMAIL CONFIRMATION MODAL -->
+        <div id="modalConfirmation" class="modal">
+            <div class="modal__container">
+                <div class="modal_image modal_image--success"></div>
+                <p class="modal_title">Warning!</p>
+                <p class="modal_description">You have selected a <span id="contactReasonModal">REASON</span> as the reason for contact, yet, I don't have a reply email.<br><br>This way, I won't be able to contact you back. Do you want to continue?</p>
+                <button id="modalContinue" class="modal_continue_button">Yes, send email without reply option</button>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+
+        <!-- EMAIL SENT SUCCESS MODAL -->
+        <div id="modalSuccess" class="modal">
+            <div class="modal__container">
+                <div class="modal_image modal_image--success"></div>
+                <p class="modal_title">Email sent successfully!</p>
+                <p class="modal_description">Thanks for keeping in touch</p>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+    </div>
+
     <!-- LOGO AND NAVIGATION BAR -->
     <div id="header--logo-nav-bar">
         
@@ -64,38 +96,6 @@
             </ul>
 
         </nav>
-    </div>
-
-    <!-- MODALS -->
-    <div>
-        <!-- ERROR MODAL -->
-        <div id="modalError" class="modal">
-            <div class="modal__container">
-                <p id="errorModalDescription" class="modal_description">Please enter a name and a message</p>
-                <button class="modal_back_button">Return</button>
-            </div>
-        </div>
-
-        <!-- NON REPLY EMAIL CONFIRMATION MODAL -->
-        <div id="modalConfirmation" class="modal">
-            <div class="modal__container">
-                <div class="modal_image modal_image--success"></div>
-                <p class="modal_title">Warning!</p>
-                <p class="modal_description">You have selected a <span id="contactReasonModal">REASON</span> as the reason for contact, yet, I don't have a reply email.<br><br>This way, I won't be able to contact you back. Do you want to continue?</p>
-                <button id="modalContinue" class="modal_continue_button">Yes, send email without reply option</button>
-                <button class="modal_back_button">Return</button>
-            </div>
-        </div>
-
-        <!-- EMAIL SENT SUCCESS MODAL -->
-        <div id="modalSuccess" class="modal">
-            <div class="modal__container">
-                <div class="modal_image modal_image--success"></div>
-                <p class="modal_title">Email sent successfully!</p>
-                <p class="modal_description">Thanks for keeping in touch</p>
-                <button class="modal_back_button">Return</button>
-            </div>
-        </div>
     </div>
 
     <!-- MAIN SECTION -->

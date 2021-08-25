@@ -57,7 +57,6 @@ if (location.pathname=="/html/contact.html") {
     let tempParams
     
     const sendEmail = function() {
-        console.log('Voy a enviar un correo WUJUUUUU')
             emailjs.send('service_c5sznik','template_jwv5qsi', tempParams)
             .then(function(res){
                 sentStatus = res.status
@@ -118,23 +117,55 @@ if (location.pathname=="/html/contact.html") {
             };
         }
 
+        const validateEmail = email => {
+            let noSpaces = true
+            let atNumber = 0
+            let atExist = false
+            let numberOfDotsAfterAt = 0
+            for (let character of email) {
+                if (character==' ') {
+                    noSpaces = false
+                }
+                if (character=='@') {
+                    atExist = true
+                    atNumber++
+                }
+                if (atExist) {
+                    if (character=='.') {
+                        numberOfDotsAfterAt++
+                    }
+                }
+            }
+            if (atExist && noSpaces && atNumber == 1 && numberOfDotsAfterAt == 1) {
+                return true
+            } else {
+                return false
+            }
+        }
+
         if (document.getElementById('name-input').value.trim() == "" || document.getElementById('message-input').value.trim() == "") {
             errorModalDescription.innerHTML = 'Please enter both a name and a message'
             body.style.overflow = 'hidden'
             modalError.style.display = 'flex'
         } else {
-            if (document.getElementById('radioOpt2').checked || document.getElementById('radioOpt3').checked) {
-                if (document.getElementById('reply-input').value.trim() == "") {
-                    if (document.getElementById('radioOpt2').checked) contactReasonModal.innerHTML = "question"
-                    if (document.getElementById('radioOpt3').checked) contactReasonModal.innerHTML = "job offer"
-                    body.style.overflow = 'hidden'
-                    modalConfirmation.style.display = 'flex'
+            if (document.getElementById('reply-input').value.trim() != "" && validateEmail(document.getElementById('reply-input').value.trim()) == false) {
+                errorModalDescription.innerHTML = 'Please enter a valid reply email'
+                body.style.overflow = 'hidden'
+                modalError.style.display = 'flex'
+            } else {
+                if (document.getElementById('radioOpt2').checked || document.getElementById('radioOpt3').checked) {
+                    if (document.getElementById('reply-input').value.trim() == "") {
+                        if (document.getElementById('radioOpt2').checked) contactReasonModal.innerHTML = "question"
+                        if (document.getElementById('radioOpt3').checked) contactReasonModal.innerHTML = "job offer"
+                        body.style.overflow = 'hidden'
+                        modalConfirmation.style.display = 'flex'
+                    } else {
+                        validInfo = true
+                    }
                 } else {
                     validInfo = true
                 }
-            } else {
-                validInfo = true
-            }
+            } 
         }
 
         if (validInfo) {

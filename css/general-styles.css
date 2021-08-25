@@ -38,21 +38,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 15px; 
+  width: 10px; 
+  
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--blue-gray-darker);
-  /* border-radius: 100px; */
-  /* margin: 50px 0px; */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--main-yellow);
-  border: 1px solid var(--blue-gray-darker)
-  /* border-radius: 100px; */
+  border: 1px solid var(--blue-gray-darker);
+  border-radius: 100px;
 
 }
 
