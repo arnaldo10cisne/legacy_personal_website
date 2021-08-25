@@ -235,6 +235,7 @@ a {
   font-size: 1.6rem;
   transition-property: background-color;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .button:hover {

@@ -153,40 +153,44 @@ main {
 }
 
 .modal_back_button {
-    background-color: transparent;
+    background-color: rgb(180, 180, 180);
     font-family: var(--content-font);
+    font-size: 1.6rem;
     border: none;
-    border: black solid 1px ;
+    border: black solid 2px ;
     padding: 5px 15px;
     border-radius: 10px;
     transition-property: color, background-color, border;
     transition-duration: 0.1s;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .modal_back_button:hover {
   color: white;
   background-color: var(--blue-gray-darker);
-  border: var(--blue-gray-darker) solid 1px;
+  border: var(--blue-gray-darker) solid 2px;
 }
 
 .modal_continue_button {
-    background-color: transparent;
+    background-color: rgb(180, 180, 180);
     font-family: var(--content-font);
+    font-size: 1.6rem;
     border: none;
-    border: black solid 1px ;
+    border: black solid 2px ;
     margin-bottom: 15px;
     padding: 5px 15px;
     border-radius: 10px;
     transition-property: color, background-color, border;
     transition-duration: 0.1s;
     font-weight: 600;
+    cursor:pointer;
 }
 
 .modal_continue_button:hover {
   color: var(--navigation-timeline-level-1);
   background-color: var(--navigation-timeline-level-3);
-  border: var(--navigation-timeline-level-3) solid 1px ;
+  border: var(--navigation-timeline-level-3) solid 2px ;
 }
 
 .modal_image--success {
