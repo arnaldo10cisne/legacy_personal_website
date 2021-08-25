@@ -14,6 +14,21 @@ export const footer = document.getElementsByTagName('footer')
     header[0].addEventListener("click", func.hideMenu)
     main[0].addEventListener("click", func.hideMenu)
     footer[0].addEventListener("click", func.hideMenu)
+    elem.navBtnHome.addEventListener("click", ()=>{
+        window.location.pathname="/html/landing.html"
+    })
+    elem.navBtnBlog.addEventListener("click", ()=>{
+        window.location.pathname="/html/blog.html"
+    })
+    elem.navBtnPortfolio.addEventListener("click", ()=>{
+        window.location.pathname="/html/portfolio.html"
+    })
+    elem.navBtnAbout.addEventListener("click", ()=>{
+        window.location.pathname="/html/about.html"
+    })
+    elem.navBtnContact.addEventListener("click", ()=>{
+        window.location.pathname="/html/contact.html"
+    })
 }
 
 

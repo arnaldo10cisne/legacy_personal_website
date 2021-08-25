@@ -80,6 +80,7 @@
     border-left: var(--main-yellow) solid 1px;
     transition-property: border-left padding-right;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .menu--not-current:hover {

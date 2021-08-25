@@ -4,6 +4,12 @@ export const menuBtn = document.getElementById("menu-button")
 export const menuBtnTrigger = document.getElementById("menu-button-trigger")
 export const btnSendEmail = document.getElementById('btnSendEmail')
 
+export const navBtnHome = document.getElementById('navBtnHome')
+export const navBtnBlog = document.getElementById('navBtnBlog')
+export const navBtnPortfolio = document.getElementById('navBtnPortfolio')
+export const navBtnAbout = document.getElementById('navBtnAbout')
+export const navBtnContact = document.getElementById('navBtnContact')
+
 export const htmlCssCourseList = document.getElementById('html-css-list')
 export const jsCourseList = document.getElementById('js-list')
 export const pythonCourseList = document.getElementById('python-list')
