@@ -12,8 +12,10 @@ header {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     /* DIMENSIONS */
+    height: 100vh;
     padding: 60px 0 20px 0;
     margin-bottom: -20px;
 
@@ -140,7 +142,7 @@ main h3 {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
-        
+     
     /* DIMENSIONS */
     
     /* COLORS AND OTHER STYLES */
@@ -155,14 +157,14 @@ main h3 {
     align-self: center;
         
     /* DIMENSIONS */
-    width: 90%;
-    margin:15px 0px;
+    /* width: 90%; */
+    margin:auto 20px;
     padding: 20px;
     
     /* COLORS AND OTHER STYLES */
     background-color: var(--blue-gray-transparent);
     border-radius: 20px;
-
+    backdrop-filter: blur(2px);
 }
 
 #main--articles-section div a {
@@ -285,25 +287,27 @@ main h3 {
 /* TABLET */
 @media (min-width: 450px) {
     #header--web-banner{
-        width: 70%;
+        width: 90%;
         align-self: center;
     }
 
     #web-banner--text {
+        font-size: 2rem;
         margin-left: 0px;
     }
 
     #web-banner--name {
-        font-size: 6.5rem;
-        line-height: 45pt;
+        font-size: 9rem;
+        line-height: 60pt;
     }
 
     #header--slogan {
-        width: 70%;
+        font-size: 2rem;
+        width: 90%;
+        padding-right: 80px;
     }
-
-    .article-sample-container {
-        width: 50%;
+    #main--articles-section {
+        height: 70vh;
     }
 
     .portfolio-item {
@@ -317,9 +321,28 @@ main h3 {
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+    #web-banner--text {
+        font-size: 3rem;
+        margin-left: 0px;
+    }
+
     #web-banner--name {
-        font-size: 8rem;
-        line-height: 60pt;
+        font-size: 10.3rem;
+        line-height: 85pt;
+    }
+
+    #header--slogan {
+        font-size: 2rem;
+        width: 90%;
+        padding-right: 150px;
+    }
+
+    .article-title {
+        font-size: 3rem;
+    }
+
+    .article-sample{
+        font-size: 2rem;
     }
 
     #portfolio-rail {
@@ -335,13 +358,16 @@ main h3 {
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
     #header--web-banner{
-        width: 50%;
+        width: 90%;
         align-self: center;
     }
-    #header--slogan {
-        width: 50%;
+    #web-banner--name {
+        font-size: 14.1rem;
+        line-height: 100pt;
     }
-    .article-sample-container {
-        width: 30%;
+    #header--slogan {
+        font-size: 2.5rem;
+        width: 90%;
+        padding-right: 300px;
     }
  }
