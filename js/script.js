@@ -16,7 +16,7 @@ export const footer = document.getElementsByTagName('footer')
             location.pathname = pathName
         }
     } else {
-        location.pathname = location.pathname + '.html'
+        // location.pathname = location.pathname + '.html'
     }
 }
 
