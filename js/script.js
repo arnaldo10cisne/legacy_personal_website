@@ -15,6 +15,8 @@ export const footer = document.getElementsByTagName('footer')
             pathName = pathName.substring(0, pathName.indexOf('.html'))
             location.pathname = pathName
         }
+    } else {
+        location.pathname = location.pathname + '.html'
     }
 }
 
