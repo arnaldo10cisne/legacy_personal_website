@@ -10,3 +10,6 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteCond %{HTTP_HOST} *!^www*.arnaldocisneros\.com [NC]
 RewriteRule (.*) https://www.arnaldocisneros.com/$1 [L,R=301]
+
+#Prevent directory listing
+Options -Indexes
