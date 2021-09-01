@@ -5,6 +5,18 @@ export const header = document.getElementsByTagName('header')
 export const main = document.getElementsByTagName('main')
 export const footer = document.getElementsByTagName('footer')
 
+// URL CLEANER
+{
+    if (location.host == 'www.arnaldocisneros.com') {
+        let pathName = location.pathname
+        if (pathName.endsWith('index.html')) {
+            location.pathname = '/'
+        } else if (pathName.endsWith('.html')) {
+            pathName = pathName.substring(0, pathName.indexOf('.html'))
+            location.pathname = pathName
+        }
+    }
+}
 
 // GLOBAL EVENT LISTENERS
 {
@@ -31,9 +43,8 @@ export const footer = document.getElementsByTagName('footer')
     })
 }
 
-
 // EVENT LISTENERS FOR 'certificates.html'
-if (location.pathname=="/certificates.html") {
+if (location.pathname=="/certificates.html" || location.pathname=="/certificates") {
     elem.htmlCssCourseList.addEventListener("click", func.htmlAndCssCollapse)
     elem.jsCourseList.addEventListener("click", func.javascriptCollapse)
     elem.pythonCourseList.addEventListener("click", func.pythonCollapse)
@@ -41,7 +52,7 @@ if (location.pathname=="/certificates.html") {
 }
 
 // EVENT LISTENERS FOR 'contact.html'
-if (location.pathname=="/contact.html") {
+if (location.pathname=="/contact.html" || location.pathname=="/contact") {
     
     const body = document.getElementById('body')
     const modalError = document.getElementById('modalError')
