@@ -15,25 +15,25 @@ export const footer = document.getElementsByTagName('footer')
     main[0].addEventListener("click", func.hideMenu)
     footer[0].addEventListener("click", func.hideMenu)
     elem.navBtnHome.addEventListener("click", ()=>{
-        window.location.pathname="/html/landing.html"
+        window.location.pathname="/index.html"
     })
     elem.navBtnBlog.addEventListener("click", ()=>{
-        window.location.pathname="/html/blog.html"
+        window.location.pathname="/blog.html"
     })
     elem.navBtnPortfolio.addEventListener("click", ()=>{
-        window.location.pathname="/html/portfolio.html"
+        window.location.pathname="/portfolio.html"
     })
     elem.navBtnAbout.addEventListener("click", ()=>{
-        window.location.pathname="/html/about.html"
+        window.location.pathname="/about.html"
     })
     elem.navBtnContact.addEventListener("click", ()=>{
-        window.location.pathname="/html/contact.html"
+        window.location.pathname="/contact.html"
     })
 }
 
 
 // EVENT LISTENERS FOR 'certificates.html'
-if (location.pathname=="/html/certificates.html") {
+if (location.pathname=="/certificates.html") {
     elem.htmlCssCourseList.addEventListener("click", func.htmlAndCssCollapse)
     elem.jsCourseList.addEventListener("click", func.javascriptCollapse)
     elem.pythonCourseList.addEventListener("click", func.pythonCollapse)
@@ -41,7 +41,7 @@ if (location.pathname=="/html/certificates.html") {
 }
 
 // EVENT LISTENERS FOR 'contact.html'
-if (location.pathname=="/html/contact.html") {
+if (location.pathname=="/contact.html") {
     
     const body = document.getElementById('body')
     const modalError = document.getElementById('modalError')

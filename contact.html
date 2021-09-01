@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Arnaldo Cisneros</title>
+<meta name="keywords" content="Arnaldo, Jose, Cisneros, Zambrano, Frontend, Backend, Fullstack, Developer, Colombia, Freelancer, Brownie">
+    <meta name="author" content="Arnaldo Cisneros">
+    <meta name="description" content="Originally from cities always hugged by mountains and tropical climates, Arnaldo has been a passionate student of computer science and software creation since he was 13 years old.">
+    <link rel="icon" href="./assets/img/logo_small_icon_only_inverted(2).png">
+    <link rel="stylesheet" href="./css/general-styles.css">
+    <link rel="stylesheet" href="./css/logo-nav-bar-styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer-styles.css">
+    <!-- FONTS IMPORT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- EMAILJS SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_hwKIrINnDQ530IcDDEZd1");
+        })();
+    </script>
+</head>
+<body id='body'>
+
+    <header></header>
+
+    <!-- MODALS -->
+    <div>
+        <!-- ERROR MODAL -->
+        <div id="modalError" class="modal">
+            <div class="modal__container">
+                <p id="errorModalDescription" class="modal_description">Please enter a name and a message</p>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+
+        <!-- NON REPLY EMAIL CONFIRMATION MODAL -->
+        <div id="modalConfirmation" class="modal">
+            <div class="modal__container">
+                <div class="modal_image modal_image--success"></div>
+                <p class="modal_title">Warning!</p>
+                <p class="modal_description">You have selected a <span id="contactReasonModal">REASON</span> as the reason for contact, yet, I don't have a reply email.<br><br>This way, I won't be able to contact you back. Do you want to continue?</p>
+                <button id="modalContinue" class="modal_continue_button">Yes, send email without reply option</button>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+
+        <!-- EMAIL SENT SUCCESS MODAL -->
+        <div id="modalSuccess" class="modal">
+            <div class="modal__container">
+                <div class="modal_image modal_image--success"></div>
+                <p class="modal_title">Email sent successfully!</p>
+                <p class="modal_description">Thanks for keeping in touch</p>
+                <button class="modal_back_button">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO AND NAVIGATION BAR -->
+    <div id="header--logo-nav-bar">
+        
+        <a href="./index.html"><img rel="preload"  id="logo" src="./assets/img/logo_small(3).png" alt="logo" width="120px"></a>
+        
+        <nav>
+    
+            <ul id="header--nav-bar">
+                <li id="nav-bar--menu-button">
+                    <div id="menu-button-trigger">
+                        <button id="menu-button" type="button" >MENU</button><img rel="preload"  src="./assets/icons/triangle-icon.png" alt="menu arrow" width="15" id="menu-arrow">
+                    </div>
+                    <li id="navBtnHome" class="menu--item menu--not-current" >
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li id="navBtnBlog" class="menu--item menu--not-current">
+                        <a href="./blog.html">BLOG</a>
+                    </li>
+                    <li id="navBtnPortfolio" class="menu--item menu--not-current">
+                        <a href="./portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li id="navBtnAbout" class="menu--item menu--not-current">
+                        <a href="./about.html">ABOUT</a>
+                    </li>
+                    <li id="navBtnContact" class="menu--item menu--current-page">
+                        <a href="#" >CONTACT</a>
+                    </li>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <main>
+
+        <div class="navigation_timeline">
+            <div class="navigation_timeline__level navigation--level_1">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="navigation_timeline__level navigation--level_2 navigation--current_level">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <h1 class="title">Contact</h1>
+        <h2 class="section-divider">Get in touch with Arnaldo</h2>
+        <p id="instructions">Reach me with questions, work inquiries, or just to say hi!</p>
+        <div id="form_container">
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="name-h3">Your name:</h3>
+                <input class="input_text" id="name-input" type="text">
+            </div>
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="name-h3">Reason for contact:</h3>
+                <div class="radio_container">
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt1" name="reason" value="Opt1" checked>
+                        <label class="radio_label" for="radioOpt1">Say hi!</label>
+                    </div>
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt2" name="reason" value="Opt2">
+                        <label class="radio_label" for="radioOpt2">Ask question</label>
+                    </div>
+                    <div class="radio_button">
+                        <input type="radio" id="radioOpt3" name="reason" value="Opt3">
+                        <label class="radio_label" for="radioOpt3">Job offer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_container__input">
+                <h3 class="contact_title" id="message-h3">Your message:</h3>
+                <textarea class="input_text" id="message-input"></textarea>
+            </div>
+            
+            <div class="form_container__input">
+                <h3 class="contact_title" id="reply-h3">Reply email:</h3>
+                <input class="input_text" id="reply-input" type="email">
+            </div>
+
+        </div>
+        <button id="btnSendEmail" class="button">Send message</button>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="social_media">
+            <p><a class="social_media__link" href="https://www.instagram.com/arnaldo10cisne/" target="_blank" rel="noopener noreferrer">Instagram</a> | <a class="social_media__link" href="https://github.com/arnaldo10cisne" target="_blank" rel="noopener noreferrer">Github</a> | <a class="social_media__link" href="https://www.linkedin.com/in/arnaldo10cisne/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+        </div>
+        <div  class="copyright">
+            <div class="copyright__line-1">
+                <span>&nbsp;©</span>
+                <span>&nbsp;COPYRIGHT 2021,&nbsp;</span>
+            </div>
+            <span class="copyright__line-2">&nbsp;ARNALDO CISNEROS&nbsp;</span>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
