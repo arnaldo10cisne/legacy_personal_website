@@ -7,7 +7,7 @@ export const footer = document.getElementsByTagName('footer')
 
 // URL CLEANER
 {
-    if (location.host == 'www.arnaldocisneros.com') {
+    if (location.host == 'www.arnaldocisneros.com' || location.host == 'arnaldocisneros.com') {
         let pathName = location.pathname
         if (pathName.endsWith('index.html')) {
             location.pathname = '/'

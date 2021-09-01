@@ -5,8 +5,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
-#Redirect to subdomain www.
+#Redirect to subdomain www
 Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} *!^www*.dominio\.com [NC]
-RewriteRule (.*) https://www.dominio.com/$1 [L,R=301]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} *!^www*.arnaldocisneros\.com [NC]
+RewriteRule (.*) https://www.arnaldocisneros.com/$1 [L,R=301]
