@@ -1,3 +1,5 @@
+export const curtain = document.getElementById('curtain')
+
 export const subMenus = document.getElementsByClassName('menu--item')
 export const menuArrow = document.getElementById('menu-arrow')
 export const menuBtn = document.getElementById("menu-button")

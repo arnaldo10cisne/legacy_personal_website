@@ -43,6 +43,12 @@ export const footer = document.getElementsByTagName('footer')
     elem.navBtnContact.addEventListener("click", ()=>{
         window.location.pathname="/contact.html"
     })
+    addEventListener("load", ()=> {
+        func.curtainFadeEffect(false)
+    })
+    addEventListener("unload",()=> {
+        func.curtainFadeEffect(true)
+    })
 }
 
 // EVENT LISTENERS FOR 'certificates.html'

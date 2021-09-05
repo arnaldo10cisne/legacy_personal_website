@@ -152,3 +152,32 @@ export const formatEmailMessage = msg => {
     }
     return finalMsg
 }
+
+export const curtainFadeEffect = bool => {
+    if (bool) {
+        //Fade in
+        console.log('fade in')
+        var op = 0.1
+        const timer = setInterval(() => {
+            if (op >= 1) {
+                clearInterval(timer)
+            }
+            elem.curtain.style.opacity = op
+            elem.curtain.style.filter = 'alpha(opacity' + op * 100 + ')'
+            op = op + 0.1
+        }, 10)
+    } else {
+        //Fade out
+        console.log('fade out')
+        var op = 1
+        const timer = setInterval(() => {
+            if (op <= 0.1) {
+                clearInterval(timer)
+                elem.curtain.style.display = 'none'
+            }
+            elem.curtain.style.opacity = op
+            elem.curtain.style.filter = 'alpha(opacity=' + op * 100 + ")"
+            op = op - 0.05
+        }, 10)
+    }
+}
