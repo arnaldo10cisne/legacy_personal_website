@@ -11,7 +11,7 @@ main {
     /* COLORS AND OTHER STYLES */
 }
 
-main section {
+main > section {
     /* DISPLAY AND POSITION */
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ main section {
     margin-top: 25px;
 }
 
-main h1 {
+.article_title {
     /* DISPLAY AND POSITION */
     align-self: center;
     justify-self: center;
@@ -79,7 +79,7 @@ article {
 
     /* COLORS AND OTHER STYLES */
 }
-article p {
+article > p {
     /* DISPLAY AND POSITION */
     text-align: justify;
 
@@ -100,7 +100,8 @@ article p {
 /* TABLET */
 @media (min-width: 450px) {
     #main--picture-section img {
-        max-width: 40vw;
+        /* max-width: 40vw; */
+        height: 300px;
     }
 }
 
@@ -108,17 +109,17 @@ article p {
 @media (min-width: 1024px) {
 
     #main--picture-section {
-        max-width: 400px;
+        height: 350px;
         position: absolute;
-        top: 100px;
-        left: 60vw;
+        top: 125px;
+        left: 30vw;
     }
 
-    #main--picture-section img {
-        max-width: 400px;
+    #main--picture-section > img {
+        height: 400px;
     }
 
-    main h1 {
+    .article_title {
         z-index: 2;
         text-shadow: 3px 1px 0px var(--blue-gray);
         text-align: start;
@@ -140,11 +141,11 @@ article p {
         font-size: 2rem;
     }
 
-    article p {
+    article > p {
         text-align: start;
     }
 
-    article p:nth-child(2) {
+    article > p:nth-child(2) {
         width: 500px;
     }
 
