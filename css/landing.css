@@ -157,7 +157,7 @@ main h3 {
     align-self: center;
         
     /* DIMENSIONS */
-    /* width: 90%; */
+    max-width: 500px;
     margin:auto 20px;
     padding: 20px;
     
