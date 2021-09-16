@@ -252,6 +252,9 @@ main h3 {
     width: 100vw;
     margin: 20px 0px;
 }
+.portfolio-item_img {
+    vertical-align:middle;
+}
 
 #main--portfolio-section div p {
     /* DIMENSIONS */
