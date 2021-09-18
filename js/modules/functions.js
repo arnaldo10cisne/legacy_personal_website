@@ -7,6 +7,25 @@ let javascriptDeploy = true;
 let pythonDeploy = true;
 let otherDeploy = true;
 
+let htmlCssListHeight
+let javascriptListHeight
+let pythonListHeight
+let otherListHeight
+
+// The following event listener is made to allow the page to load entirely, and only when that happens, the HEIGHT variables are going to get assign, as well as the max-height value in the courses-list
+addEventListener("load",()=>{
+    setTimeout(() => {
+        htmlCssListHeight = window.getComputedStyle(elem.htmlCssList, null).getPropertyValue("height");
+        javascriptListHeight = window.getComputedStyle(elem.javascriptList, null).getPropertyValue("height");
+        pythonListHeight = window.getComputedStyle(elem.pythonList, null).getPropertyValue("height");
+        otherListHeight = window.getComputedStyle(elem.otherList, null).getPropertyValue("height");
+        elem.htmlCssList.style.maxHeight = htmlCssListHeight
+        elem.javascriptList.style.maxHeight = javascriptListHeight
+        elem.pythonList.style.maxHeight = pythonListHeight
+        elem.otherList.style.maxHeight = otherListHeight
+    }, 100);
+})
+
 export const checkScreenWidth = () => {
     if (innerWidth >= 1024) {
         for (i = 0; i < elem.subMenus.length ;i++) {
@@ -29,16 +48,12 @@ export const htmlAndCssCollapse = () => {
 
     if (htmlAndCssDeploy) {
         // HIDE COURSES
-        for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
-            elem.courseListHtmlAndCss[i].style.display='none';
-        }
+        elem.htmlCssList.style.maxHeight = '0px'
         elem.htmlAndCssArrow.style.transform='rotate(0deg)'
         htmlAndCssDeploy=false;
     } else {
         // SHOW COURSES
-        for (i = 0; i < elem.courseListHtmlAndCss.length ;i++) {
-            elem.courseListHtmlAndCss[i].style.display='block';
-        }
+        elem.htmlCssList.style.maxHeight = htmlCssListHeight
         elem.htmlAndCssArrow.style.transform='rotate(180deg)'
         htmlAndCssDeploy=true;
     }
@@ -49,19 +64,16 @@ export const javascriptCollapse = () => {
 
     if (javascriptDeploy) {
         // HIDE COURSES
-        for (i = 0; i < elem.courseListJs.length ;i++) {
-            elem.courseListJs[i].style.display='none';
-            // subMenus[i].style.display='none';
-        }
+        elem.javascriptList.style.maxHeight = '0px'
         elem.jsArrow.style.transform='rotate(0deg)'
         javascriptDeploy=false;
+        
     } else {
         // SHOW COURSES
-        for (i = 0; i < elem.courseListJs.length ;i++) {
-            elem.courseListJs[i].style.display='block';
-        }
+        elem.javascriptList.style.maxHeight = javascriptListHeight
         elem.jsArrow.style.transform='rotate(180deg)'
         javascriptDeploy=true;
+        
     }
 
 }
@@ -70,42 +82,30 @@ export const pythonCollapse = () => {
 
     if (pythonDeploy) {
         // HIDE COURSES
-        for (i = 0; i < elem.courseListPython.length ;i++) {
-            elem.courseListPython[i].style.display='none';
-        }
+        elem.pythonList.style.maxHeight = '0px'
         elem.pythonArrow.style.transform='rotate(0deg)'
         pythonDeploy=false;
     } else {
         // SHOW COURSES
-        for (i = 0; i < elem.courseListPython.length ;i++) {
-            elem.courseListPython[i].style.display='block';
-        }
+        elem.pythonList.style.maxHeight = pythonListHeight
         elem.pythonArrow.style.transform='rotate(180deg)'
         pythonDeploy=true;
     }
-
 }
 
 export const otherCollapse = () => {
 
     if (otherDeploy) {
         // HIDE COURSES
-        // subMenus= document.getElementsByClassName('other-course')
-        for (i = 0; i < elem.courseListOthers.length ;i++) {
-            elem.courseListOthers[i].style.display='none';
-        }
+        elem.otherList.style.maxHeight = '0px'
         elem.otherArrow.style.transform='rotate(0deg)'
         otherDeploy=false;
     } else {
         // SHOW COURSES
-        // subMenus= document.getElementsByClassName('other-course')
-        for (i = 0; i < elem.courseListOthers.length ;i++) {
-            elem.courseListOthers[i].style.display='block';
-        }
+        elem.otherList.style.maxHeight = otherListHeight
         elem.otherArrow.style.transform='rotate(180deg)'
         otherDeploy=true;
     }
-
 }
 
 export const hideMenu = () => {

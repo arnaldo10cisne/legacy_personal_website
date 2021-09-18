@@ -1,6 +1,7 @@
 .arrow {
     filter: invert(1);
     transform: rotate(180deg);
+    transition: transform 0.2s;
 }
 
 main {
@@ -84,7 +85,19 @@ h2 {
     cursor: pointer;
     user-select: none;
 }
+.courses_list{
+    /* DISPLAY AND POSITION */
+    grid-column: 1/5;
+    overflow-y: hidden;
 
+    /* DIMENSIONS */
+    width: 100%;
+
+    /* COLORS AND OTHER STYLES */ 
+
+    /* MOVEMENT */
+    transition: max-height 0.5s;
+}
 .course-container {
     /* DISPLAY AND POSITION */
     grid-column: 1/5;
@@ -168,6 +181,10 @@ h2 {
 /* DESKTOP */
 @media (min-width: 1024px) {
 
+    main {
+        min-height: 100vh;
+    }
+
     main h1 {
         font-size: 10vw;
         width: 90%;
@@ -175,6 +192,8 @@ h2 {
 
     .certificates-table {
         width: 60%;
+        max-height: 95vh;
+        
     }
 
 }
@@ -189,6 +208,7 @@ h2 {
 
     .certificates-table {
         width: 50%;
+
     }
 
 }

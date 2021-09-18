@@ -22,6 +22,11 @@ export const courseListJs = document.getElementsByClassName('js-course')
 export const courseListPython = document.getElementsByClassName('python-course')
 export const courseListOthers = document.getElementsByClassName('other-course')
 
+export const htmlCssList = document.getElementById('htmlCssList')
+export const javascriptList = document.getElementById('javascriptList')
+export const pythonList = document.getElementById('pythonList')
+export const otherList = document.getElementById('otherList')
+
 export const htmlAndCssArrow = document.getElementById('html-css-arrow')
 export const jsArrow = document.getElementById('js-arrow')
 export const pythonArrow = document.getElementById('python-arrow')
