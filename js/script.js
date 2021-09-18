@@ -16,7 +16,7 @@ export const footer = document.getElementsByTagName('footer')
             location.pathname = pathName
         }
     } else {
-        // location.pathname = location.pathname + '.html'
+        //location.pathname = location.pathname + '.html'
     }
 }
 
@@ -25,6 +25,7 @@ export const footer = document.getElementsByTagName('footer')
     addEventListener("load", func.checkScreenWidth)
     addEventListener("resize", func.checkScreenWidth)
     elem.menuBtnTrigger.addEventListener("click", func.clickMenuButton)
+    addEventListener("scroll", func.hideMenu)
     header[0].addEventListener("click", func.hideMenu)
     main[0].addEventListener("click", func.hideMenu)
     footer[0].addEventListener("click", func.hideMenu)

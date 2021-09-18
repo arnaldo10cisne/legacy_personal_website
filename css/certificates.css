@@ -20,35 +20,6 @@ main {
     /* COLORS AND OTHER STYLES */
 }
 
-main h1 {
-    /* DISPLAY AND POSITION */
-    align-self: center;
-
-    /* DIMENSIONS */
-    margin: 33px 0px 0px 0;
-
-    /* COLORS AND OTHER STYLES */
-    font-size: 17vw;
-    color: var(--main-yellow);
-    font-family: var(--title-font);
-}
-
-h2 {
-    /* DISPLAY AND POSITION */
-    align-self: center;
-    text-align: center;
-
-    /* DIMENSIONS */
-    width: 100%;
-    padding: 5px 0;
-    margin: 20px 0;
-
-    /* COLORS AND OTHER STYLES */
-    background-color: var(--main-yellow);
-    color: var(--blue-gray);
-    font-family: var(--main-font);
-}
-
 .certificates-table {
     /* DISPLAY AND POSITION */
     display: grid;
@@ -64,8 +35,6 @@ h2 {
     padding-right: 10px;
 
     /* COLORS AND OTHER STYLES */
-    
-    
 }
 
 .platzi-course-section {
@@ -172,9 +141,6 @@ h2 {
 
 /* TABLET */
 @media (min-width: 450px) {
-    main h1 {
-        font-size: 15vw;
-    }
 
 }
 
@@ -183,11 +149,6 @@ h2 {
 
     main {
         min-height: 100vh;
-    }
-
-    main h1 {
-        font-size: 10vw;
-        width: 90%;
     }
 
     .certificates-table {
@@ -200,11 +161,6 @@ h2 {
 
 /* BIG DESKTOP */
 @media (min-width: 1400px) {
-
-    main h1 {
-        font-size: 5.5vw;
-        width: 90%;
-    }
 
     .certificates-table {
         width: 50%;
