@@ -26,7 +26,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-y: scroll;
     justify-self: stretch;
-    flex-grow: 1;
 
     /* DIMENSIONS */
     margin: auto 0;
@@ -41,10 +40,12 @@ main {
     /* DISPLAY AND POSITION */
     grid-column: 1/5;
     text-align: center;
+    vertical-align: middle;
 
     /* DIMENSIONS */
     padding: 10px 0;
     margin: 5px 0;
+    max-height: 44px;
 
     /* COLORS AND OTHER STYLES */
     font-family: var(--main-font);
