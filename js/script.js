@@ -57,6 +57,7 @@ if (location.pathname=="/certificates.html" || location.pathname=="/certificates
     elem.htmlCssCourseList.addEventListener("click", func.htmlAndCssCollapse)
     elem.jsCourseList.addEventListener("click", func.javascriptCollapse)
     elem.pythonCourseList.addEventListener("click", func.pythonCollapse)
+    elem.ddbbCourseList.addEventListener("click", func.ddbbCollapse)
     elem.otherCourseList.addEventListener("click", func.otherCollapse)
 }
 

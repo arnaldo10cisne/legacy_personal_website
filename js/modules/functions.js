@@ -5,11 +5,13 @@ let menuDeploy = false;
 let htmlAndCssDeploy = true;
 let javascriptDeploy = true;
 let pythonDeploy = true;
+let ddbbDeploy = true;
 let otherDeploy = true;
 
 let htmlCssListHeight
 let javascriptListHeight
 let pythonListHeight
+let ddbbListHeight
 let otherListHeight
 
 // The following event listener is made to allow the page to load entirely, and only when that happens, the HEIGHT variables are going to get assign, as well as the max-height value in the courses-list
@@ -18,12 +20,14 @@ addEventListener("load",()=>{
         htmlCssListHeight = window.getComputedStyle(elem.htmlCssList, null).getPropertyValue("height");
         javascriptListHeight = window.getComputedStyle(elem.javascriptList, null).getPropertyValue("height");
         pythonListHeight = window.getComputedStyle(elem.pythonList, null).getPropertyValue("height");
+        ddbbListHeight = window.getComputedStyle(elem.ddbbList, null).getPropertyValue("height");
         otherListHeight = window.getComputedStyle(elem.otherList, null).getPropertyValue("height");
         elem.htmlCssList.style.maxHeight = htmlCssListHeight
         elem.javascriptList.style.maxHeight = javascriptListHeight
         elem.pythonList.style.maxHeight = pythonListHeight
+        elem.ddbbList.style.maxHeight = ddbbListHeight
         elem.otherList.style.maxHeight = otherListHeight
-    }, 100);
+    }, 300);
 })
 
 export const checkScreenWidth = () => {
@@ -90,6 +94,21 @@ export const pythonCollapse = () => {
         elem.pythonList.style.maxHeight = pythonListHeight
         elem.pythonArrow.style.transform='rotate(180deg)'
         pythonDeploy=true;
+    }
+}
+
+export const ddbbCollapse = () => {
+
+    if (ddbbDeploy) {
+        // HIDE COURSES
+        elem.ddbbList.style.maxHeight = '0px'
+        elem.ddbbArrow.style.transform='rotate(0deg)'
+        ddbbDeploy=false;
+    } else {
+        // SHOW COURSES
+        elem.ddbbList.style.maxHeight = ddbbListHeight
+        elem.ddbbArrow.style.transform='rotate(180deg)'
+        ddbbDeploy=true;
     }
 }
 
