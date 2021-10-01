@@ -78,37 +78,62 @@ main {
     margin: 2px 10px;
 
     /* COLORS AND OTHER STYLES */ 
+    overflow: hidden;
 }
 
 .course-container a {
     /* DISPLAY AND POSITION */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    position: relative;
 
     /* DIMENSIONS */
+    padding: 2px 10px;
 
     /* COLORS AND OTHER STYLES */
     
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.397);
+    /* background-image: url(https://res.cloudinary.com/arnaldo10cisne/image/upload/v1633061210/platzi-logo-symbol_gklcux.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    backdrop-filter: ;
+    background-size: 50%; */
     border: 3px solid rgba(128, 128, 128, 0);
     transition-property: border;
     transition-duration: 0.2s;
+    
 }
 
 .course-container a:hover {
     border: 3px solid var(--main-yellow);
 }
 
+.academy_icon {
+    /* DISPLAY AND POSITION */
+    position: absolute;
+    z-index: 0;
+    justify-self: center;
+    align-self: center;
+    right: 3vw;
+
+    /* DIMENSIONS */
+    height: 50px;
+    opacity: 0.3;
+    
+}
 
 .course-icon {
     /* DISPLAY AND POSITION */
-    grid-column: 1/2;
     justify-self: center;
     align-self: center;
+    z-index: 1;
 
     /* DIMENSIONS */
     padding: 2px 0;
+    margin: 0 3vw;
     width: 50px;
 
     /* COLORS AND OTHER STYLES */
@@ -116,10 +141,12 @@ main {
 
 .course-name {
     /* DISPLAY AND POSITION */
-    grid-column: 2/5;
+    grid-column: 3/6;
     align-self: center;
+    z-index: 1;
 
     /* DIMENSIONS */
+    margin-left: 10px;
 
     /* COLORS AND OTHER STYLES */
     user-select: none;
