@@ -176,8 +176,8 @@ if (location.pathname=="/contact.html" || location.pathname=="/contact") {
             } else {
                 if (document.getElementById('radioOpt2').checked || document.getElementById('radioOpt3').checked) {
                     if (document.getElementById('reply-input').value.trim() == "") {
-                        if (document.getElementById('radioOpt2').checked) contactReasonModal.innerHTML = "question"
-                        if (document.getElementById('radioOpt3').checked) contactReasonModal.innerHTML = "job offer"
+                        if (document.getElementById('radioOpt2').checked) contactReasonModal.innerHTML = "QUESTION"
+                        if (document.getElementById('radioOpt3').checked) contactReasonModal.innerHTML = "WORK TOGETHER"
                         body.style.overflow = 'hidden'
                         modalConfirmation.style.display = 'flex'
                     } else {

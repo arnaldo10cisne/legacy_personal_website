@@ -97,6 +97,17 @@ header {
     /* COLORS AND OTHER STYLES */
 }
 
+.call_to_action_button{
+    align-self: center;
+    margin: 10px 0;
+    width: 90%;
+}
+.call_to_action_button > a{
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* MAIN STYLES */
 
 main {
@@ -306,6 +317,11 @@ main h3 {
         width: 90%;
         padding-right: 80px;
     }
+
+    .call_to_action_button > a{
+        font-size: 3rem;
+    }
+
     #main--articles-section {
         height: 70vh;
     }
